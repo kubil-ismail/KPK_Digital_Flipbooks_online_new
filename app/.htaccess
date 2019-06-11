@@ -1,0 +1,19 @@
+
+ErrorDocument 404 "<meta http-equiv='refresh' content='0; url=error/404.html'/>"
+
+Options -Indexes
+Options -Multiviews
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^home?$ index.php
+RewriteRule ^kontak?$ kontak.php
+RewriteRule ^petunjuk?$ petunjuk.php
+
+RewriteRule ^kategori/Anak?$ kategori/anak.php
+RewriteRule ^kategori/DuniaUsaha?$ kategori/duniaUsaha.php
+RewriteRule ^kategori/PendidikanAntiKorupsi?$ kategori/pendidikanAntiKorupsi.php
+RewriteRule ^kategori/Politik?$ kategori/politik.php
+RewriteRule ^kategori/Umum?$ kategori/umum.php
