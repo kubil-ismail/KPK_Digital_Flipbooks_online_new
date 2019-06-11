@@ -1,13 +1,13 @@
 <?php
-  //HOST
+  //SERVER NAME
   $DB_HOST = "localhost";
   //USERNAME
   $DB_USER = "root";
   //PASSWORD
   $DB_PASS = "";
-  //DATABASE
+  //DATABASE_NAME
   $DB_NAME = "kpk_pdf";
-  //URL Website
-  define('BASEURL', 'http://localhost'.'/app'.'/pdf');
+  //URL Website 
+  define('BASEURL', 'http://localhost'.'/pdf');
   //Email website
   $Config_Email = "info@gmail.com";
