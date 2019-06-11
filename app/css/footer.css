@@ -1,0 +1,125 @@
+/* MOBILE */
+  @media (max-width: 599px) {
+    .footer {
+      margin-top: 300px;
+    }
+    .footer-images {
+      position: sticky;
+      z-index: -1;
+    }
+    footer {
+      z-index: 2;
+      bottom: 0 !important;
+      top: 0 !important;
+      color: #ffffff;
+      margin-bottom: -600px;
+    }
+    footer ul.social li{
+    	padding: 10px 10px;
+      margin-bottom: 90px;
+    }
+    footer ul.social li a i {
+    	font-size: 30px;
+    	-webkit-transition: .2s all ease;
+    	-moz-transition: .2s all ease;
+    	transition: .2s all ease;
+    }
+    footer ul.social li:hover a i {
+    	font-size: 35px;
+    	margin-top: -10px;
+    }
+    footer ul.social li a{
+    	color:#ffffff;
+    }
+    footer ul.social li a:hover{
+    	color:#eeeeee;
+    }
+    .address p{
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+/* TABLET */
+  @media (min-width: 600px) and (max-width: 800px) {
+    .footer {
+      margin-top: 500px;
+    }
+    .footer-images {
+      position: sticky;
+      z-index: -1;
+    }
+    footer {
+      z-index: 2;
+      bottom: 0 !important;
+      top: 0 !important;
+      margin-bottom: -800px;
+      color: #ffffff;
+    }
+    footer ul.social li{
+    	padding: 10px 10px;
+    }
+    footer ul.social li a i {
+    	font-size: 35px;
+    	-webkit-transition: .2s all ease;
+    	-moz-transition: .2s all ease;
+    	transition: .2s all ease;
+    }
+    footer ul.social li:hover a i {
+    	font-size: 45px;
+    	margin-top: -10px;
+    }
+    footer ul.social li a{
+    	color:#ffffff;
+    }
+    footer ul.social li a:hover{
+    	color:#eeeeee;
+    }
+    .address p{
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+/* DESKTOP */
+  @media (min-width: 801px){
+    .footer {
+      position: relative;
+      text-align: center;
+      margin-top: 500px;
+    }
+    footer {
+      z-index: 2;
+      bottom: 0 !important;
+      top: 0 !important;
+      margin-bottom: -750px;
+      color: #ffffff;
+    }
+    .footer-images {
+      position: sticky;
+      z-index: -1;
+    }
+    footer ul.social li{
+    	padding: 10px 10px;
+    }
+    footer ul.social li a i {
+    	font-size: 35px;
+    	-webkit-transition: .2s all ease;
+    	-moz-transition: .2s all ease;
+    	transition: .2s all ease;
+    }
+    footer ul.social li:hover a i {
+    	font-size: 45px;
+    	margin-top: -10px;
+    }
+    footer ul.social li a{
+    	color:#ffffff;
+    }
+    footer ul.social li a:hover{
+    	color:#eeeeee;
+    }
+    .address p{
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }

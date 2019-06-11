@@ -1,0 +1,22 @@
+.form-group input,
+.form-group textarea{
+  box-shadow: 1px !important;
+  border: 3px solid #f65e49 !important;
+  border-width: thick;
+}
+.form-group label,
+#headTitle {
+  color: #f65e49;
+  font-weight: bold;
+}
+#kirim {
+  background-color: #f65e49;
+  color: white;
+  border: 0;
+  width: 150px;
+}
+.send button{
+  background-color: #f65e49 !important;
+  border-color: #f65e49 !important;
+  width: 100px;
+}

@@ -1,0 +1,18 @@
+/* Red */
+.bg-red-light {
+  background-color: #f65e49 !important;
+}
+.clr-red-light {
+  color: #f65e49 !important;
+}
+/* Black */
+.clr-black {
+  color: black !important;
+}
+/* White */
+.bg-white {
+  background-color: white !important;
+}
+.clr-white {
+  color: white !important;
+}

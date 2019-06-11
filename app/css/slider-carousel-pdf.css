@@ -1,0 +1,11 @@
+  @media (min-width: 801px){
+    .hide{
+      font-size: 0px !important;
+      visibility: hidden !important;
+      display: none !important;
+      width: 0px !important;
+      transition: 1s;
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+  }
