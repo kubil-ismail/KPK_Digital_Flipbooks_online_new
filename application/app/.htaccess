@@ -1,6 +1,3 @@
-
-ErrorDocument 404 "<meta http-equiv='refresh' content='0; url=error/404.html'/>"
-
 Options -Indexes
 Options -Multiviews
 
@@ -17,3 +14,5 @@ RewriteRule ^kategori/DuniaUsaha?$ kategori/duniaUsaha.php
 RewriteRule ^kategori/PendidikanAntiKorupsi?$ kategori/pendidikanAntiKorupsi.php
 RewriteRule ^kategori/Politik?$ kategori/politik.php
 RewriteRule ^kategori/Umum?$ kategori/umum.php
+
+RewriteRule ^admin/kpk?$ admin/index.php

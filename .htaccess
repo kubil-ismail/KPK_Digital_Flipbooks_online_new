@@ -1,6 +1,4 @@
-Options -Indexes
-Options -Multiviews
-
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteRule ^(.*)$ application/app/$1 [L]
+</IfModule>
