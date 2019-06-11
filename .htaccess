@@ -1,4 +1,4 @@
 <IfModule mod_rewrite.c>
         RewriteEngine On
-        RewriteRule ^(.*)$ application/app/$1 [L]
+        RewriteRule ^(.*)$ application/$1
 </IfModule>
