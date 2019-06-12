@@ -51,12 +51,12 @@
                 Instalasi Online
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Instalasi tanpa video</a>
-                <a class="dropdown-item" href="#">Instalasi dengan video</a>
+                <a class="dropdown-item" href="#" id="nav-online-text">Instalasi tanpa video</a>
+                <a class="dropdown-item" href="#" id="nav-online-vid">Instalasi dengan video</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontak Kami</a>
+              <a class="nav-link" href="#" id="kontak-nav">Kontak Kami</a>
             </li>
           </ul>
         </div>
@@ -74,8 +74,10 @@
           <p>Kamu dapat memilih jenis instalasi yang di inginkan (<b>Offline/Online</b>) dan jenis tutorial yang di sediakan (<b>tanpa video/dengan video</b>)</p>
           <a class="btn btn-danger m-1" href="#" role="button" id="offline-text-btn">Instalasi Offline tanpa video</a>
           <a class="btn btn-danger m-1" href="#" role="button" id="offline-vid-btn">Instalasi Offline dengan video</a>
-          <a class="btn btn-danger m-1" href="#" role="button">Instalasi Online dengan video</a>
-          <a class="btn btn-danger m-1" href="#" role="button">Instalasi Online tanpa video</a>
+          <a class="btn btn-danger m-1" href="#" role="button" id="online-text-btn">Instalasi Online tanpa video</a>
+          <a class="btn btn-danger m-1" href="#" role="button" id="online-vid-btn">Instalasi Online dengan video</a>
+          <p>Jika terdapat kesulitan saat proses instalasi silahkan hubungi kami</p>
+          <a class="btn btn-danger m-1" href="#" role="button" id="kontak-btn">Kontak kami</a>
         </div>
       </div>
     </section>
@@ -160,9 +162,9 @@
         </div>
       </div>
     </section>
-    <!-- Instalasi Offline tanpa video -->
+    <!-- End Of Instalasi Offline tanpa video -->
 
-    <!-- Instalasi Online dengan Video -->
+    <!-- Instalasi Offline dengan Video -->
     <section class="offline-vid mt-2" id="offline-vid">
       <div class="container">
         <div class="jumbotron bg-white shadow">
@@ -186,7 +188,113 @@
         </div>
       </div>
     </section>
+    <!-- End Of Instalasi Offline dengan Video -->
+
+    <!-- iNSTALASI Online Tanpa Video -->
+    <section class="offline-vid mt-2" id="offline-vid">
+      <div class="container">
+        <div class="jumbotron bg-white shadow">
+          <h1 class="display-4">Instalasi Online tanpa video</h1>
+          <p class="lead">Ini adalah tata cara instalasi aplikasi web KPK Digital Flipbook pada hosting tanpa video</p>
+          <hr class="my-4">
+
+          <p>Pertama-tama siapkan akun hosting yang akan kamu gunakan dan silahkan unduh software filezilla pada link berikut</p>
+
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Filezilla
+              <span class="badge badge-primary badge-pill"><a href="https://filezilla-project.org/download.php?type=client" target="_blank" class="text-white">Unduh Filezilla</a></span>
+            </li>
+          </ul>
+
+          <p>Jika sudah siap silahkan ikuti gambar di bawah ini</p>
+
+          <img src="assets/img/tutorial online/1.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/2.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/3.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/4.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <p>Pada gambar di bawah silahkan buka software filezilla kamu dan masukan settingan konfigurasi filezilla yang sesuai dengan akun filezilla hosting</p>
+          <img src="assets/img/tutorial online/5.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/6.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/7.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/8.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/9.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/10.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/11.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/12.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/13.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/14.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/15.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/16.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+          <img src="assets/img/tutorial online/17.jpg" alt="" class="mb-3 w-50 img-thumbnail">
+
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript -->
+
+    <!-- Instalasi Offline dengan Video -->
+    <section class="offline-vid mt-2" id="offline-vid">
+      <div class="container">
+        <div class="jumbotron bg-white shadow">
+          <h1 class="display-4">Instalasi Online dengan video</h1>
+          <p class="lead">Ini adalah tata cara instalasi aplikasi web KPK Digital Flipbook pada hosting dengan video</p>
+          <hr class="my-4">
+          <!-- 16:9 aspect ratio -->
+          <h3>Settingan pada hosting</h3>
+          <p>Pada tahap ini jika kamu tidak menggunakan sub domain maka tidak perlu membuat sub domain langsung saja arahkan ke domain utama mu</p>
+          <div align="center" class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" controls>
+                <source src="assets/vid/tutorial online/apa yang harus di persiapkan.webm" type="video/webm">
+            </video>
+          </div>
+
+          <!-- 16:9 aspect ratio -->
+          <h3>Configurasi Website</h3>
+          <div align="center" class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" controls>
+                <source src="assets/vid/tutorial online/configurasi website.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Instalasi Offline dengan Video -->
+
+    <!-- Kontak Kami -->
+    <section class="offline-vid mt-2" id="offline-vid">
+      <div class="container">
+        <div class="jumbotron bg-white shadow">
+          <h1 class="display-4">Kontak Kami</h1>
+          <p class="lead">Kamu punya pertanyaan / kendala saat proses instalasi? Janagan sungkan bertanya kepada kami</p>
+          <hr class="my-4">
+          <h3>Reynaldi Rivaldo</h3>
+          <p><b>Email : </b>reynaldirivaldo112@gmail.com</p>
+          <p><b>No Tlp : </b>+62 858-1084-0409</p>
+            <br>
+          <h3>Bilkis Ismail</h3>
+          <p><b>Email : </b>bilkisismail07@gmail.com</p>
+          <p><b>No Tlp : </b>+62 896-3008-0545</p>
+        </div>
+      </div>
+    </section>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -209,6 +317,34 @@
         });
         $('#offline-vid-btn').click(function(){
           $("html, body").animate({ scrollTop: 8150 }, 600);
+        });
+
+        $('#nav-online-text').click(function(){
+          $("html, body").animate({ scrollTop: 8150 }, 600);
+        });
+        $('#online-text-btn').click(function(){
+          $("html, body").animate({ scrollTop: 8150 }, 600);
+        });
+
+        $('#nav-online-text').click(function(){
+          $("html, body").animate({ scrollTop: 9800 }, 600);
+        });
+        $('#online-text-btn').click(function(){
+          $("html, body").animate({ scrollTop: 9800 }, 600);
+        });
+
+        $('#nav-online-vid').click(function(){
+          $("html, body").animate({ scrollTop: 14800 }, 600);
+        });
+        $('#online-vid-btn').click(function(){
+          $("html, body").animate({ scrollTop: 14800 }, 600);
+        });
+
+        $('#kontak-btn').click(function(){
+          $("html, body").animate({ scrollTop: 16500 }, 600);
+        });
+        $('#kontak-nav').click(function(){
+          $("html, body").animate({ scrollTop: 16500 }, 600);
         });
       });
     </script>
