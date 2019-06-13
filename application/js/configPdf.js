@@ -1788,6 +1788,57 @@ var data = {
     }
   },
 
+  //PendidikanAnti KorupsiUntuk PerguruanTinggi
+    "PendidikanAnti KorupsiUntuk PerguruanTinggi": {
+      pdfUrl: 'pdf/Panduan Pendidikan Antikorupsi/2/59/Pendidikan Anti Korupsi untuk Perguruan Tinggi.pdf',
+      layout:3,
+      currentPage:{vAlign:"bottom", hAlign:"left"},
+      // BTN SETTING
+      btnToc : {
+        enabled: true,
+        title: "Table of content",
+        icon: "fa-list-ol",
+        hideOnMobile: true
+      },
+      btnDownloadPdf : {
+        forceDownload: true,
+        icon: "fa-download"
+      },
+      btnPrint : {hideOnMobile:true},
+      btnDownloadPages : {enabled: false},
+      btnColor:'#ff2e2e',
+      sideBtnColor:'#ff2e2e',
+      sideBtnSize:60,
+      sideBtnBackground:"rgba(0,0,0,.7)",
+      sideBtnRadius:60,
+      btnSound:{vAlign:"top", hAlign:"left"},
+      btnAutoplay:{vAlign:"top", hAlign:"left"},
+      // SHARING
+      btnShare : {
+        enabled: true,
+        title: "Share",
+        icon: "fa-share-alt"
+      },
+      facebook : {
+        enabled: true,
+        url: $('#url_hosting').val()+"pdf/Panduan Pendidikan Antikorupsi/2/59/Pendidikan Anti Korupsi untuk Perguruan Tinggi.pdf"
+      },
+      google_plus : {enabled: false},
+      email : {
+        enabled: true,
+        url: $('#url_hosting').val()+"pdf/Panduan Pendidikan Antikorupsi/2/59/Pendidikan Anti Korupsi untuk Perguruan Tinggi.pdf",
+        title: "PDF KPK",
+        description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
+      },
+      twitter : {
+        enabled: true,
+        url: $('#url_hosting').val()+"pdf/Panduan Pendidikan Antikorupsi/2/59/Pendidikan Anti Korupsi untuk Perguruan Tinggi.pdf"
+      },
+      pinterest : {
+      enabled: true,
+      url: $('#url_hosting').val()+"pdf/Panduan Pendidikan Antikorupsi/2/59/Pendidikan Anti Korupsi untuk Perguruan Tinggi.pdf"
+      }
+    },
 
 
 

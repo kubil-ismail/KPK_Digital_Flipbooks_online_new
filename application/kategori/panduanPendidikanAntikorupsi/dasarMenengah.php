@@ -73,7 +73,7 @@
       <button type="button" class="close">×</button>
       <form method="get" action="../search.php">
           <input type="text" name="search" placeholder="Cari judul buku..." autocomplete="off" id="keyword">
-          <button type="submit" class="btn btn-danger">Search</button>
+          <button type="submit" class="btn btn-danger">Cari</button>
       </form>
     </div>
     <!-- End Of Search Fullscreen -->
@@ -198,6 +198,11 @@
     <!-- DESKTOP -->
     <section id="D-anak" class="d-D">
       <div class="container">
+        <div class="pdfAnak kategori mt-1 mb-5" id="pdfAnak">
+          <a href="PendidikanDasarDanMenengah" class="mt-5 kategori">
+            <p>Pendidikan Dasar Dan Menengah</p>
+          </a>
+        </div>
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="bookshelf">
