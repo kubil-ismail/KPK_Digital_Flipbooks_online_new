@@ -48,6 +48,34 @@ function get_pdf_limit($id)
   return $pdf;
 }
 
+// GET PDF BY group
+function get_pdf_sub_f_menengah_dasar($id){
+  global $conn;
+
+  $res = mysqli_query($conn, "SELECT * FROM `pdf` WHERE sub_kategori = 'Pendidikan Dasar dan Menengah'");
+  $pdf = [];
+
+  while($row = mysqli_fetch_assoc($res))
+  {
+    $pdf[] = $row;
+  }
+
+  return $pdf;
+}
+function get_pdf_sub_f_tinggi($id){
+  global $conn;
+
+  $res = mysqli_query($conn, "SELECT * FROM `pdf` WHERE sub_kategori = 'Pendidikan Tinggi'");
+  $pdf = [];
+
+  while($row = mysqli_fetch_assoc($res))
+  {
+    $pdf[] = $row;
+  }
+
+  return $pdf;
+}
+
 //VIEW PDF
 function view_pdf($id)
 {

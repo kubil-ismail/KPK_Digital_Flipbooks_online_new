@@ -9,9 +9,9 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <title>KPK Digital Flipbook | Home</title>
+     <title>Buku Antikorupsi | Home</title>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
      <link rel="stylesheet" href="css/flipbook.style.css">
      <!--Import Bootstrap.css-->
@@ -59,10 +59,14 @@
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ml-auto">
              <li class="nav-item mx-4 nav-active bg-red-light">
-               <a class="nav-link clr-white beranda" href="#" style="color: white !important;">Beranda</a>
+               <a class="nav-link clr-white beranda d-D" href="#" style="color: white !important;">Beranda</a>
+               <a class="nav-link clr-white beranda d-T" href="#" style="color: white !important;" data-toggle="collapse" data-target="#navbarNav">Beranda</a>
+               <a class="nav-link clr-white beranda d-M" href="#" style="color: white !important;" data-toggle="collapse" data-target="#navbarNav">Beranda</a>
              </li>
              <li class="nav-item mx-4">
-               <a class="nav-link clr-white D-Ba" href="#">Buku Antikorupsi</a>
+               <a class="nav-link clr-white D-Ba d-D" href="#">Buku Antikorupsi</a>
+               <a class="nav-link clr-white D-Ba d-T" href="#" data-toggle="collapse" data-target="#navbarNav">Buku Antikorupsi</a>
+               <a class="nav-link clr-white D-Ba d-M" href="#" data-toggle="collapse" data-target="#navbarNav">Buku Antikorupsi</a>
              </li>
              <li class="nav-item mx-4 dropdown">
                <a class="nav-link clr-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,7 +77,12 @@
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="kategori/DuniaUsaha">Dunia Usaha</a>
                  <div class="dropdown-divider"></div>
-                 <a class="dropdown-item" href="kategori/PendidikanAntiKorupsi">Panduan Pendidikan <br>Antikorupsi</a>
+                 <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
+                 <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
+                    <a class="dropdown-item" href="kategori/PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="kategori/Pendidikantinggi">Pendidikan Tinggi</a>
+                 </div>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="kategori/Politik">Politik</a>
                  <div class="dropdown-divider"></div>
@@ -1059,6 +1068,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -1074,7 +1084,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -1091,6 +1101,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -1106,7 +1117,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -1123,6 +1134,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -1138,7 +1150,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -1206,7 +1218,7 @@
                       <a id="read" class="btn-modal-pdf btn btn-danger w-100 mb-3">Baca</a>
                     </div>
                     <div class="col-6">
-                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Download</a>
+                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Unduh</a>
                     </div>
                   </div>
                 </div>

@@ -9,11 +9,11 @@ RewriteRule ^home?$ index.php
 RewriteRule ^kontak?$ kontak.php
 RewriteRule ^petunjuk?$ petunjuk.php
 
-RewriteRule ^Anak?$ anak.php
+RewriteRule ^PendidikanAntiKorupsi/Anak?$ anak.php
 RewriteRule ^DuniaUsaha?$ duniaUsaha.php
 RewriteRule ^PendidikanAntiKorupsi?$ pendidikanAntiKorupsi.php
 RewriteRule ^Politik?$ politik.php
 RewriteRule ^Umum?$ umum.php
 
-RewriteRule ^PendidikanDasarDanMenengah?$ panduanPendidikanAntikorupsi/dasarMenengah.php
-RewriteRule ^Pendidikantinggi?$ panduanPendidikanAntikorupsi/tinggi.php
+RewriteRule ^PendidikanDasarDanMenengah?$ dasarMenengah.php
+RewriteRule ^Pendidikantinggi?$ tinggi.php

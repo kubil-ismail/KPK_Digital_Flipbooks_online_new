@@ -41,9 +41,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>KPK Admin | List Buku</title>
+    <title>Buku Antikorupsi | List Buku</title>
     <!-- favicon  -->
-    <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+    <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">

@@ -1,11 +1,11 @@
 <?php
-  require "../config/connection.php";
-  $umum = get_pdf(5);
+  require "../../config/connection.php";
+  $pendidikan_anti_korupsi = get_pdf_sub_f_menengah_dasar(3);
 ?>
 <!DOCTYPE html>
  <html>
    <head>
-     <title>Buku Antikorupsi | Umum</title>
+     <title>Buku Antikorupsi | Pendidikan dasar dan menengah</title>
      <!-- favicon  -->
      <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
@@ -19,9 +19,43 @@
      <link rel="stylesheet" href="../css/carousel.css">
      <link rel="stylesheet" href="../css/modal.css">
      <link rel="stylesheet" href="../css/footer.css">
-     <link rel="stylesheet" href="css/kategori.css">
      <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
      <!--Let browser know website is optimized for mobile-->
+     <style media="screen">
+     /* MOBILE */
+       @media (max-width: 599px) {
+         .pendidikanAntiKorupsi-carousel-caption-1{
+           bottom: 3% !important;
+           margin-bottom: -10% !important;
+           margin-top: 19% !important;
+         }
+       }
+
+     /* TABLET */
+       @media (min-width: 600px) and (max-width: 800px) {
+         .pendidikanAntiKorupsi-carousel-caption-2{
+           right: 10% !important;
+           bottom: 20% !important;
+           margin-bottom: 0% !important;
+           margin-top: 25% !important;
+         }
+
+       }
+
+     /* DESKTOP */
+       @media (min-width: 801px){
+         .pendidikanAntiKorupsi-carousel-caption-3{
+           right: 9% !important;
+           bottom: 15% !important;
+           margin-bottom: 0% !important;
+           margin-top: 25% !important;
+         }
+         .item-active {
+           border-radius: 15px;
+         }
+       }
+
+     </style>
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <meta charset="utf-8">
    </head>
@@ -72,24 +106,23 @@
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
                  <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
-                    <a class="dropdown-item" href="PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                    <a class="dropdown-item bg-white clr-red-light item-active d-D" href="#" style="color:#f65e49 !important;">Pendidikan<br> Dasar dan Menengah</a>
+                    <a class="dropdown-item bg-white clr-red-light item-active d-T" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Pendidikan<br> Dasar dan Menengah</a>
+                    <a class="dropdown-item bg-white clr-red-light item-active d-M" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Pendidikan<br> Dasar dan Menengah</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="Pendidikantinggi">Pendidikan Tinggi</a>
                  </div>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="Politik">Politik</a>
                  <div class="dropdown-divider"></div>
-
-                 <a class="dropdown-item bg-white clr-red-light item-active d-D" href="#" style="color:#f65e49 !important;">Umum</a>
-                 <a class="dropdown-item bg-white clr-red-light item-active d-T" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Umum</a>
-                 <a class="dropdown-item bg-white clr-red-light item-active d-M" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Umum</a>
+                 <a class="dropdown-item" href="Umum">Umum</a>
                </div>
              </li>
              <li class="nav-item mx-4">
-               <a class="nav-link clr-white" href="../petunjuk.php">Petunjuk</a>
+               <a class="nav-link clr-white" href="../petunjuk">Petunjuk</a>
              </li>
              <li class="nav-item mx-4">
-               <a class="nav-link clr-white" href="../kontak.php">Kontak</a>
+               <a class="nav-link clr-white" href="../kontak">Kontak</a>
              </li>
              <li class="nav-item mx-4">
                <a class="nav-link clr-white" href="#search">
@@ -106,13 +139,17 @@
     <div id="DesktopCarousel" class="carousel slide DesktopCarousel d-D" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item carousel-item-1 active">
-          <div class="carousel-caption umum-carousel-caption-3 text-right">
+          <div class="carousel-caption pendidikanAntiKorupsi-carousel-caption-3 text-right">
             <div class="block float-right text-center">
               <h3 style="color: white !important; font-size:30px;">BUKU ANTIKORUPSI</h3>
-              <h2 style="color: white !important; font-size:65px;"><b>Umum</b></h2>
+              <h2 style="color: white !important; font-size:65px;"><b>
+                Panduan <br>
+                Pendidikan <br>
+                Antikorupsi
+              </b></h2>
             </div>
           </div>
-          <img src="../images/Slider/banner umum.png" class="d-block w-100" alt="Banner Kategori Dunia Usaha">
+          <img src="../images/Slider/banner panduan pendidikan antikorupsi.png" class="d-block w-100" alt="Banner Kategori Dunia Usaha">
         </div>
       </div>
     </div>
@@ -122,13 +159,17 @@
     <div id="TabletCarousel" class="carousel slide TabletCarousel d-T" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item carousel-item-1 active">
-          <div class="carousel-caption umum-carousel-caption-2 text-right">
+          <div class="carousel-caption pendidikanAntiKorupsi-carousel-caption-2 text-right">
             <div class="block float-right text-center">
               <h3 style="color: white !important; font-size:20px;">BUKU ANTIKORUPSI</h3>
-              <h2 style="color: white !important; font-size:35px;"><b>Umum</b></h2>
+              <h2 style="color: white !important; font-size:35px;"><b>
+                Panduan <br>
+                Pendidikan <br>
+                Antikorupsi
+              </b></h2>
             </div>
           </div>
-          <img src="../images/Slider/banner umum.png" class="d-block w-100" alt="Banner Kategori Dunia Usaha">
+          <img src="../images/Slider/banner panduan pendidikan antikorupsi.png" class="d-block w-100" alt="Banner Kategori Dunia Usaha">
         </div>
       </div>
     </div>
@@ -138,17 +179,21 @@
     <div id="MobileCarousel" class="carousel slide MobileCarousel d-M" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item carousel-item-1 active">
-          <div class="carousel-caption umum-carousel-caption-3 text-center">
+          <div class="carousel-caption pendidikanAntiKorupsi-carousel-caption-1 text-center">
             <h3 style="color: #c71a00 !important; font-size:15px;">BUKU ANTIKORUPSI</h3>
-            <h2 style="color: #c71a00 !important; font-size:30px;"><b>Umum</b></h2>
+            <h2 style="color: #c71a00 !important; font-size:30px;"><b>
+              Panduan <br>
+              Pendidikan <br>
+              Antikorupsi
+            </b></h2>
           </div>
-          <img src="../images/Slider/banner umum mobile.png" class="d-block w-100" alt="Banner Kategori Dunia Usaha">
+          <img src="../images/Slider/banner panduan pendidikan antikorupsi mobile.png" class="d-block w-100" alt="Banner Kategori Dunia Usaha">
         </div>
       </div>
     </div>
     <!-- End Of MobileCarousel -->
 
-    <!-- Panduan Umum PDF -->
+    <!-- Panduan Pendidikan Antikorupsi PDF -->
     <br><br><br>
     <!-- DESKTOP -->
     <section id="D-anak" class="d-D">
@@ -157,13 +202,13 @@
           <div class="col-md-12">
             <div class="bookshelf">
               <div class="covers">
-              <?php $a = 0; foreach($umum as $an): ?>
+              <?php $a = 0; foreach($pendidikan_anti_korupsi as $an): ?>
                 <div class="thumb book-1">
                   <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
                     <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
                   </a>
                 </div>
-                  <?php if(++$a % 4 == 0 || $a == count($umum)): ?>
+                  <?php if(++$a % 4 == 0 || $a == count($pendidikan_anti_korupsi)): ?>
                     <img class="shelf-img" src="../images/rak.png" style="margin-top: 0;">
                   <?php endif; ?>
                 <?php endforeach; ?>
@@ -179,13 +224,13 @@
           <div class="col-md-12">
             <div class="bookshelf">
               <div class="covers">
-              <?php $a = 0; foreach($umum as $an): ?>
+              <?php $a = 0; foreach($pendidikan_anti_korupsi as $an): ?>
                 <div class="thumb book-1">
                   <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
                     <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
                   </a>
                 </div>
-                  <?php if(++$a % 3 == 0 || $a == count($umum)): ?>
+                  <?php if(++$a % 3 == 0 || $a == count($pendidikan_anti_korupsi)): ?>
                     <img class="shelf-img" src="../images/rak.png" style="margin-top: 0;">
                   <?php endif; ?>
                 <?php endforeach; ?>
@@ -201,7 +246,7 @@
           <div class="col-md-12">
             <div class="bookshelf">
               <div class="covers">
-              <?php $a = 0; foreach($umum as $an): ?>
+              <?php $a = 0; foreach($pendidikan_anti_korupsi as $an): ?>
                 <div class="thumb book-1 mb-5">
                   <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
                     <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
@@ -213,7 +258,7 @@
         </div>
       </div>
     </section>
-    <!-- End Of Panduan Umum PDF -->
+    <!-- End Of Panduan Pendidikan Antikorupsi PDF -->
 
 
 

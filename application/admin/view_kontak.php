@@ -29,9 +29,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>KPK Admin</title>
+    <title>Buku Antikorupsi | View Kontak</title>
     <!-- favicon  -->
-    <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+    <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">

@@ -1,0 +1,74 @@
+/* MOBILE */
+  @media (max-width: 599px) {
+    .Anak-carousel-caption-1,
+    .DuniaUsaha-carousel-caption-1,
+    .politik-carousel-caption-3,
+    .umum-carousel-caption-3{
+      bottom: 12% !important;
+      margin-bottom: -10% !important;
+      margin-top: 19% !important;
+    }
+    .pendidikanAntiKorupsi-carousel-caption-1{
+      bottom: 3% !important;
+      margin-bottom: -10% !important;
+      margin-top: 19% !important;
+    }
+  }
+
+/* TABLET */
+  @media (min-width: 600px) and (max-width: 800px) {
+    .Anak-carousel-caption-2{
+      bottom: 30% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+    .DuniaUsaha-carousel-caption-2{
+      right: 10% !important;
+      bottom: 30% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+    .pendidikanAntiKorupsi-carousel-caption-2{
+      right: 10% !important;
+      bottom: 20% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+    .politik-carousel-caption-2,
+    .umum-carousel-caption-2{
+      right: 10% !important;
+      bottom: 25% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+  }
+
+/* DESKTOP */
+  @media (min-width: 801px){
+    .Anak-carousel-caption-3{
+      bottom: 35% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+    .DuniaUsaha-carousel-caption-3{
+      right: 10% !important;
+      bottom: 35% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+    .pendidikanAntiKorupsi-carousel-caption-3{
+      right: 9% !important;
+      bottom: 15% !important;
+      margin-bottom: 0% !important;
+      margin-top: 25% !important;
+    }
+    .politik-carousel-caption-3,
+    .umum-carousel-caption-3{
+      bottom: 25% !important;
+      margin-bottom: 0% !important;
+      margin-top: 20% !important;
+    }
+    .item-active {
+      border-radius: 15px;
+    }
+  }

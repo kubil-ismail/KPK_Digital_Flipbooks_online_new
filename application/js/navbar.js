@@ -20,4 +20,7 @@ $(document).ready(function() {
       $('.navbar-toggler i').removeClass('clr-black');
     }
   });
+  $('.dropdown-submenu').click(function(){
+    
+  });
 });

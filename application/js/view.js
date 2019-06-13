@@ -8,15 +8,15 @@ $(document).ready(function () {
       json = JSON.parse(res);
       $('#D-unduh').html("Jumlah Unduh : "+"<b>"+json.pdf_download_count+"</b>");
       $('#D-baca').html('Jumlah Baca : '+"<b>"+json.pdf_read_count+"</b>");
-      $('#D-pdfSize').html('Size: '+"<b>"+json.pdf_size +' MB'+"</b>");
+      $('#D-pdfSize').html('Ukuran File : '+"<b>"+json.pdf_size +' MB'+"</b>");
 
       $('#T-unduh').html("Jumlah Unduh : "+"<b>"+json.pdf_download_count+"</b>");
       $('#T-baca').html('Jumlah Baca : '+"<b>"+json.pdf_read_count+"</b>");
-      $('#T-pdfSize').html('Size: '+"<b>"+json.pdf_size +' MB'+"</b>");
+      $('#T-pdfSize').html('Ukuran File : '+"<b>"+json.pdf_size +' MB'+"</b>");
 
       $('#M-unduh').html("Jumlah Unduh : "+"<b>"+json.pdf_download_count+"</b>");
       $('#M-baca').html('Jumlah Baca : '+"<b>"+json.pdf_read_count+"</b>");
-      $('#M-pdfSize').html('Size: '+"<b>"+json.pdf_size +' MB'+"</b>");
+      $('#M-pdfSize').html('Ukuran : '+"<b>"+json.pdf_size +' MB'+"</b>");
 
       $('#headModal').html(json.pdf_title);
       $('#descModal').html(json.pdf_desc);

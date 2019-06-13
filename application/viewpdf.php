@@ -37,7 +37,7 @@
    <head>
      <title><?= $data['pdf_title'] ?></title>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="images/Logo KPK/favicon.png">
      <meta charset="utf-8">
      <link rel="stylesheet" href="css/flipbook.style.css">
      <link rel="stylesheet" href="css/fontawesome/css/all.min.css">

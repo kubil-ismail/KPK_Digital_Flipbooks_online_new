@@ -10,4 +10,4 @@
   //URL Website
   define('BASEURL', 'http://localhost'.'/');
   //Email website
-  $Config_Email = "info@gmail.com";
+  $Config_Email = "dikyanmas.kampanye@kpk.go.id";

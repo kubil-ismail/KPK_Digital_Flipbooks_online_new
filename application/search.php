@@ -38,11 +38,11 @@
        <?php if ($jumlah<1): ?>
          <title>404 NOT FOUND</title>
          <?php else: ?>
-         <title>KPK Digital Flipbook | Search</title>
+         <title>Buku Antikorupsi | Search</title>
        <?php endif; ?>
      <?php endif; ?>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
      <link rel="stylesheet" href="css/flipbook.style.css">
      <!--Import Bootstrap.css-->
@@ -142,7 +142,12 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="kategori/DuniaUsaha">Dunia Usaha</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="kategori/PendidikanAntiKorupsi">Panduan Pendidikan <br>Antikorupsi</a>
+                  <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
+                  <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
+                     <a class="dropdown-item" href="kategori/PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                     <div class="dropdown-divider"></div>
+                     <a class="dropdown-item" href="kategori/Pendidikantinggi">Pendidikan Tinggi</a>
+                  </div>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="kategori/Politik">Politik</a>
                   <div class="dropdown-divider"></div>
@@ -172,7 +177,7 @@
     <?php if (isset($_GET['search']) && !$_GET['search']==null): ?>
       <?php if ($jumlah>1): ?>
       <div class="pdfSearch kategori mt-5" id="pdfSearch">
-        <p class="mt-5">PDF Search</p>
+        <p class="mt-5">Hasil Pencarian</p>
       </div>
       <?php endif; ?>
     <?php endif; ?>
@@ -207,7 +212,7 @@
               <p id="headModal" class="text-left"><?= $obj->pdf_title; ?></p>
               <div class="row mb-2 pr-3">
                 <div class="col-12">
-                  <p class="p-0 m-0">Size <b><?= $obj->pdf_size; ?> MB</b></p>
+                  <p class="p-0 m-0">Ukuran File <b><?= $obj->pdf_size; ?> MB</b></p>
                   <p class="p-0 m-0">Unduh : <b><?= $obj->pdf_download_count; ?></b></p>
                   <p class="p-0 m-0">Read : <b><?= $obj->pdf_read_count; ?></b></p>
                 </div>
@@ -218,7 +223,7 @@
                   <a id="readSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="viewpdf.php?id=<?= $obj->id ?>" target="_blank">Baca</a>
                 </div>
                 <div class="col-6">
-                  <a id="downloadSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="add_download.php?read=<?= $obj->id ?>">Download</a>
+                  <a id="downloadSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="add_download.php?read=<?= $obj->id ?>">Unduh</a>
                 </div>
               </div>
             </div>
@@ -280,125 +285,127 @@
     <?php endif; ?>
     <!-- End Of PDF SEARCH -->
 
+    <!-- Footer -->
+    <div class="footer">
+      <footer class="d-D">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <h4><b>Follow Us</b></h4>
+            </div>
+          </div>
+          <div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+    					<ul class="list-unstyled list-inline social text-center">
+    						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+    						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
+    						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
+    					</ul>
+    				</div>
+          </div>
+          <div class="row">
+  				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <div class="address">
+                <p>GEDUNG MERAH PUTIH KPK</p>
+                <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
+                <p id="telp">Telp : (021) 2557 8300</p>
+                <p id="faks">Faks : (021) 2557 8333</p>
+                <p>Call Center: 198</p>
+                <p>Email : informasi@kpk.go.id</p>
+              </div>
+              <br>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+  				  </div>
+  			  </div>
+        </div>
+      </footer>
+      <footer class="d-T">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <h4><b>Follow Us</b></h4>
+            </div>
+          </div>
+          <div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+    					<ul class="list-unstyled list-inline social text-center">
+    						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+    						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
+    						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
+    					</ul>
+    				</div>
+          </div>
+          <div class="row">
+  				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <div class="address">
+                <p>GEDUNG MERAH PUTIH KPK</p>
+                <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
+                <p id="telp">Telp : (021) 2557 8300</p>
+                <p id="faks">Faks : (021) 2557 8333</p>
+                <p>Call Center: 198</p>
+                <p>Email : informasi@kpk.go.id</p>
+              </div>
+              <br>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+  				  </div>
+  			  </div>
+        </div>
+      </footer>
+      <footer class="d-M">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <h4><b>Follow Us</b></h4>
+            </div>
+          </div>
+          <div class="row">
+    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+    					<ul class="list-unstyled list-inline social text-center">
+    						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+    						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
+    						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
+    					</ul>
+    				</div>
+          </div>
+          <div class="row">
+  				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <div class="address">
+                <p>GEDUNG MERAH PUTIH KPK</p>
+                <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
+                <p id="telp">Telp : (021) 2557 8300</p>
+                <p id="faks">Faks : (021) 2557 8333</p>
+                <p>Call Center: 198</p>
+                <p>Email : informasi@kpk.go.id</p>
+              </div>
+              <br>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+  				  </div>
+  			  </div>
+        </div>
+      </footer>
+      <main class="d-D footer-images">
+        <img src="images/Footer/footer-01-01-01.png" alt="Footer" class="w-100">
+      </main>
+      <main class="d-T">
+        <img src="images/Footer/footer-01-01-01.png" alt="Footer" class="w-100" style="height: 800px !important;">
+      </main>
+      <main class="d-M">
+        <img src="images/Footer/footer mobile.png" alt="Footer" class="w-100" style="height: 600px !important;">
+      </main>
+    </div>
+    <!-- End Of Footer -->
 
-     <!-- Footer -->
-     <div class="footer">
-       <footer class="d-D">
-         <div class="container">
-           <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-               <h4><b>Follow Us</b></h4>
-             </div>
-           </div>
-           <div class="row">
-     				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
-     					<ul class="list-unstyled list-inline social text-center">
-     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
-     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
-     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
-     					</ul>
-     				</div>
-           </div>
-           <div class="row">
-   				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-               <div class="address">
-                 <p>GEDUNG MERAH PUTIH KPK</p>
-                 <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
-                 <p id="telp">Telp : (021) 2557 8300</p>
-                 <p id="faks">Faks : (021) 2557 8333</p>
-                 <p>Call Center: 198</p>
-                 <p>Email : informasi@kpk.go.id</p>
-               </div>
-               <br>
-               <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
-   				  </div>
-   			  </div>
-         </div>
-       </footer>
-       <footer class="d-T">
-         <div class="container">
-           <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-               <h4><b>Follow Us</b></h4>
-             </div>
-           </div>
-           <div class="row">
-     				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
-     					<ul class="list-unstyled list-inline social text-center">
-     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
-     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
-     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
-     					</ul>
-     				</div>
-           </div>
-           <div class="row">
-   				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-               <div class="address">
-                 <p>GEDUNG MERAH PUTIH KPK</p>
-                 <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
-                 <p id="telp">Telp : (021) 2557 8300</p>
-                 <p id="faks">Faks : (021) 2557 8333</p>
-                 <p>Call Center: 198</p>
-                 <p>Email : informasi@kpk.go.id</p>
-               </div>
-               <br>
-               <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
-   				  </div>
-   			  </div>
-         </div>
-       </footer>
-       <footer class="d-M">
-         <div class="container">
-           <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-               <h4><b>Follow Us</b></h4>
-             </div>
-           </div>
-           <div class="row">
-     				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
-     					<ul class="list-unstyled list-inline social text-center">
-     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
-     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
-     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
-     					</ul>
-     				</div>
-           </div>
-           <div class="row">
-   				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-               <div class="address">
-                 <p>GEDUNG MERAH PUTIH KPK</p>
-                 <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
-                 <p id="telp">Telp : (021) 2557 8300</p>
-                 <p id="faks">Faks : (021) 2557 8333</p>
-                 <p>Call Center: 198</p>
-                 <p>Email : informasi@kpk.go.id</p>
-               </div>
-               <br>
-               <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
-   				  </div>
-   			  </div>
-         </div>
-       </footer>
-       <main class="d-D footer-images">
-         <img src="images/Footer/footer-01-01-01.png" alt="Footer" class="w-100">
-       </main>
-       <main class="d-T">
-         <img src="images/Footer/footer-01-01-01.png" alt="Footer" class="w-100" style="height: 800px !important;">
-       </main>
-       <main class="d-M">
-         <img src="images/Footer/footer mobile.png" alt="Footer" class="w-100" style="height: 600px !important;">
-       </main>
-     </div>
-     <!-- End Of Footer -->
-
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.js"></script>
-      <script type="text/javascript" src="js/flipbook.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/view.js"></script>
-      <script type="text/javascript" src="js/search.js"></script>
-      <script type="text/javascript" src="js/global.js"></script>
-      <!-- Optional JS -->
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/flipbook.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <!-- Optional JS -->
     </body>
   </html>

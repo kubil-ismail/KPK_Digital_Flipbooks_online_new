@@ -1,13 +1,14 @@
 <?php
   require "../config/connection.php";
-  $pendidikan_anti_korupsi = get_pdf(3);
+  $pendidikan_anti_korupsi_dasar_menengah = get_pdf_sub_f_menengah_dasar(3);
+  $pendidikan_anti_korupsi_tinggi = get_pdf_sub_f_tinggi(3);
 ?>
 <!DOCTYPE html>
  <html>
    <head>
-     <title>KPK Digital Flipbook | Pendidikan Antikorupsi</title>
+     <title>Buku Antikorupsi | Pendidikan Antikorupsi</title>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
      <link rel="stylesheet" href="../css/flipbook.style.css">
      <!--Import Bootstrap.css-->
@@ -70,7 +71,12 @@
                  <div class="dropdown-divider" ></div>
                  <a class="dropdown-item" href="DuniaUsaha">Dunia Usaha</a>
                  <div class="dropdown-divider"></div>
-                 <a class="dropdown-item bg-white clr-red-light item-active" href="#" style="color:#f65e49 !important;">Panduan Pendidikan <br>Antikorupsi</a>
+                 <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
+                 <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
+                    <a class="dropdown-item" href="PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Pendidikantinggi">Pendidikan Tinggi</a>
+                 </div>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="Politik">Politik</a>
                  <div class="dropdown-divider"></div>
@@ -154,20 +160,26 @@
 
     <!-- Panduan Pendidikan Antikorupsi PDF -->
     <br><br><br>
+
     <!-- DESKTOP -->
     <section id="D-anak" class="d-D">
+      <div class="pdfAnak kategori mt-2 mb-5" id="pdfAnak">
+        <a href="PendidikanDasarDanMenengah" class="mt-5 kategori">
+          <p>Pendidikan Dasar Dan Menengah</p>
+        </a>
+      </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12">
             <div class="bookshelf">
               <div class="covers">
-              <?php $a = 0; foreach($pendidikan_anti_korupsi as $an): ?>
+              <?php $a = 0; foreach($pendidikan_anti_korupsi_dasar_menengah as $an): ?>
                 <div class="thumb book-1">
                   <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
                     <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
                   </a>
                 </div>
-                  <?php if(++$a % 4 == 0 || $a == count($pendidikan_anti_korupsi)): ?>
+                  <?php if(++$a % 4 == 0 || $a == count($pendidikan_anti_korupsi_dasar_menengah)): ?>
                     <img class="shelf-img" src="../images/rak.png" style="margin-top: 0;">
                   <?php endif; ?>
                 <?php endforeach; ?>
@@ -183,13 +195,13 @@
           <div class="col-md-12">
             <div class="bookshelf">
               <div class="covers">
-              <?php $a = 0; foreach($pendidikan_anti_korupsi as $an): ?>
+              <?php $a = 0; foreach($pendidikan_anti_korupsi_dasar_menengah as $an): ?>
                 <div class="thumb book-1">
                   <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
                     <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
                   </a>
                 </div>
-                  <?php if(++$a % 3 == 0 || $a == count($pendidikan_anti_korupsi)): ?>
+                  <?php if(++$a % 3 == 0 || $a == count($pendidikan_anti_korupsi_dasar_menengah)): ?>
                     <img class="shelf-img" src="../images/rak.png" style="margin-top: 0;">
                   <?php endif; ?>
                 <?php endforeach; ?>
@@ -205,7 +217,77 @@
           <div class="col-md-12">
             <div class="bookshelf">
               <div class="covers">
-              <?php $a = 0; foreach($pendidikan_anti_korupsi as $an): ?>
+              <?php $a = 0; foreach($pendidikan_anti_korupsi_dasar_menengah as $an): ?>
+                <div class="thumb book-1 mb-5">
+                  <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
+                    <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
+                  </a>
+                </div>
+                <?php endforeach; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DESKTOP -->
+    <section id="D-anak" class="d-D">
+      <div class="pdfAnak kategori mt-5 mb-5" id="pdfAnak">
+        <a href="Pendidikantinggi" class="mt-5 kategori">
+          <p>Pendidikan Tinggi</p>
+        </a>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="bookshelf">
+              <div class="covers">
+              <?php $a = 0; foreach($pendidikan_anti_korupsi_tinggi as $an): ?>
+                <div class="thumb book-1">
+                  <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
+                    <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
+                  </a>
+                </div>
+                  <?php if(++$a % 4 == 0 || $a == count($pendidikan_anti_korupsi_tinggi)): ?>
+                    <img class="shelf-img" src="../images/rak.png" style="margin-top: 0;">
+                  <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TABLET -->
+    <section id="T-anak" class="d-T">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="bookshelf">
+              <div class="covers">
+              <?php $a = 0; foreach($pendidikan_anti_korupsi_tinggi as $an): ?>
+                <div class="thumb book-1">
+                  <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
+                    <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
+                  </a>
+                </div>
+                  <?php if(++$a % 3 == 0 || $a == count($pendidikan_anti_korupsi_tinggi)): ?>
+                    <img class="shelf-img" src="../images/rak.png" style="margin-top: 0;">
+                  <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MOBILE -->
+    <section id="M-anak" class="d-M">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="bookshelf">
+              <div class="covers">
+              <?php $a = 0; foreach($pendidikan_anti_korupsi_tinggi as $an): ?>
                 <div class="thumb book-1 mb-5">
                   <a href="#" data-toggle="modal" data-id="<?= $an['id'] ?>" data-target="#modalPdf" class="PdfModalClick">
                     <img class="img-thumbnail" src="../<?= $an['pdf_thumb'] ?>">
@@ -218,6 +300,9 @@
       </div>
     </section>
     <!-- End Of Panduan Pendidikan Antikorupsi PDF -->
+
+    <!-- End Of Panduan Pendidikan Antikorupsi PDF -->
+
 
 
 
@@ -235,6 +320,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -250,7 +336,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -267,6 +353,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -282,7 +369,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -299,6 +386,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -314,7 +402,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -382,7 +470,7 @@
                       <a id="read" class="btn-modal-pdf btn btn-danger w-100 mb-3">Baca</a>
                     </div>
                     <div class="col-6">
-                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Download</a>
+                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Unduh</a>
                     </div>
                   </div>
                 </div>

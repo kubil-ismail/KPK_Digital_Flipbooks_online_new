@@ -5,9 +5,9 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <title>KPK Digital Flipbook | Politik</title>
+     <title>Buku Antikorupsi | Politik</title>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
      <link rel="stylesheet" href="../css/flipbook.style.css">
      <!--Import Bootstrap.css-->
@@ -70,9 +70,16 @@
                  <div class="dropdown-divider" ></div>
                  <a class="dropdown-item" href="DuniaUsaha">Dunia Usaha</a>
                  <div class="dropdown-divider"></div>
-                 <a class="dropdown-item" href="PendidikanAntiKorupsi">Panduan Pendidikan <br>Antikorupsi</a>
+                 <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
+                 <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
+                    <a class="dropdown-item" href="PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Pendidikantinggi">Pendidikan Tinggi</a>
+                 </div>
                  <div class="dropdown-divider"></div>
-                 <a class="dropdown-item bg-white clr-red-light item-active" href="#" style="color:#f65e49 !important;">Politik</a>
+                 <a class="dropdown-item bg-white clr-red-light item-active d-D" href="#" style="color:#f65e49 !important;">Politik</a>
+                 <a class="dropdown-item bg-white clr-red-light item-active d-T" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Politik</a>
+                 <a class="dropdown-item bg-white clr-red-light item-active d-M" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Politik</a>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="Umum">Umum</a>
                </div>
@@ -223,6 +230,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -238,7 +246,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -255,6 +263,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -270,7 +279,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -287,6 +296,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -302,7 +312,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -370,7 +380,7 @@
                       <a id="read" class="btn-modal-pdf btn btn-danger w-100 mb-3">Baca</a>
                     </div>
                     <div class="col-6">
-                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Download</a>
+                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Unduh</a>
                     </div>
                   </div>
                 </div>

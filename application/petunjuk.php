@@ -1,9 +1,9 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <title>KPK Digital Flipbook | Petunjuk Penggunaan</title>
+     <title>Buku Antikorupsi | Petunjuk Penggunaan</title>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
      <link rel="stylesheet" href="css/flipbook.style.css">
      <!--Import Bootstrap.css-->
@@ -23,11 +23,55 @@
      <style media="screen">
        .Title a{
          text-decoration: none;
-         color: #c62100;
+         color: white;
          font-weight: bold;
          display: block;
          margin: 20px 20px;
          font-size: 25px;
+       }
+       .dropdown-petunjuk {
+         background-color: #f65e49;
+         padding: 10px 40px;
+       }
+       @media (min-width: 801px){
+         .dropdown-petunjuk {
+           width: 400px;
+           margin-left: auto;
+           margin-right: auto;
+         }
+         .fungsi {
+           padding: 0 150px !important;
+         }
+       }
+       @media (max-width: 599px){
+         .head1 h4,
+         .head2 h4,
+         .head3 h4,
+         .head4 h4{
+           font-size: 20px;
+         }
+         .fungsi h5 {
+           font-size: 17px;
+           margin-top: 10px;
+         }
+         .fungsi img {
+           margin-top: 20px;
+         }
+         .head1 h4 {
+           margin-bottom: -20px !important;
+         }
+         .dropdown-petunjuk {
+           padding: 5px 10px; !important;
+           margin-left: auto;
+           margin-right: auto;
+         }
+         .dropdown-petunjuk a {
+           font-size: 20px;
+         }
+       }
+
+       .fungsi {
+         padding: 0 30px;
        }
      </style>
    </head>
@@ -75,7 +119,12 @@
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="kategori/DuniaUsaha">Dunia Usaha</a>
                  <div class="dropdown-divider"></div>
-                 <a class="dropdown-item" href="kategori/PendidikanAntiKorupsi">Panduan Pendidikan <br>Antikorupsi</a>
+                 <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
+                 <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
+                    <a class="dropdown-item" href="kategori/PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="kategori/Pendidikantinggi">Pendidikan Tinggi</a>
+                 </div>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="kategori/Politik">Politik</a>
                  <div class="dropdown-divider"></div>
@@ -83,7 +132,9 @@
                </div>
              </li>
              <li class="nav-item mx-4 nav-active bg-red-light">
-               <a class="nav-link clr-white" href="#" style="color: white !important;">Petunjuk</a>
+               <a class="nav-link clr-white d-D" href="#" style="color: white !important;">Kontak</a>
+               <a class="nav-link clr-white d-T" href="#" style="color: white !important;" data-toggle="collapse" data-target="#navbarNav">Kontak</a>
+               <a class="nav-link clr-white d-M" href="#" style="color: white !important;" data-toggle="collapse" data-target="#navbarNav">Kontak</a>
              </li>
              <li class="nav-item mx-4">
                <a class="nav-link clr-white" href="kontak">Kontak</a>
@@ -145,7 +196,7 @@
     <!-- Head 1 -->
     <section id="head1" class="head1 mt-5">
       <div class="container text-center">
-        <h3 class="mb-5" style="margin-top: 50px;">Pilih Buku Antikorupsi yang ingin di baca</h3>
+        <h4 class="mb-5" style="margin-top: 50px;">Pilih Buku Antikorupsi yang ingin di baca</h4>
         <img src="images/petunjuk pengunaan/Group 86.png" alt="Rak Buku" style="width:85%; margin-top: 50px;">
       </div>
     </section>
@@ -154,15 +205,19 @@
     <!-- Head 2 -->
     <section id="head2" class="head2 mt-5">
       <div class="container text-center">
-        <h3 class="mb-5" style="margin-top: 50px;">
+        <h4 class="mb-5" style="margin-top: 50px;">
           Atau, kamu dapat menekan tombol kategori yang <br>
           akan otomatis mengarahkan kamu pada halaman Kategori
-        </h3>
-        <div class="Title">
+        </h4>
+        <div class="Title dropdown-petunjuk">
           <a href="kategori/Anak" id="title1">Anak</a>
+          <div class="dropdown-divider"></div>
           <a href="kategori/DuniaUsaha" id="title2">Dunia Usaha</a>
+          <div class="dropdown-divider"></div>
           <a href="kategori/PendidikanAntiKorupsi" id="title3">Panduan Pendidikan Antikorupsi</a>
+          <div class="dropdown-divider"></div>
           <a href="kategori/Politik" id="title4">Politik</a>
+          <div class="dropdown-divider"></div>
           <a href="kategori/Umum" id="title5">Umum</a>
         </div>
       </div>
@@ -172,11 +227,11 @@
     <!-- Head 3 -->
     <section id="head3" class="head3 mt-5">
       <div class="container text-center">
-        <h3 class="mb-5" style="margin-top: 50px;">
+        <h4 class="mb-5" style="margin-top: 50px;">
           Tampilan mode baca akan muncul setelah kamu <br>
           memilih Buku Antikorupsi
-        </h3>
-        <img src="images/petunjuk pengunaan/Group 85.jpg" alt="Tampilan Baca" style="width:85%; margin-top: 0px;">
+        </h4>
+        <img class="img-thumbnail" src="images/petunjuk pengunaan/Group 85.jpg" alt="Tampilan Baca" style="width:85%; margin-top: 0px;">
       </div>
     </section>
     <!-- End Of Head 3 -->
@@ -184,117 +239,171 @@
     <!-- Head 4 -->
     <section id="head4" class="head4 mt-5">
       <div class="container text-center justify-content-md-center">
-        <h3 class="mb-5" style="margin-top: 50px;">Fungsi-fungsi pada tampilan mode baca</h3>
+        <h4 class="mb-5" style="margin-top: 50px;">Fungsi-fungsi pada tampilan mode baca</h4>
 
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/Group 76.png" alt="Jumlah Halaman" style="width:50px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Menampilkan jumlah halaman pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/kanan.png" alt="Kiri" style="width:30px;">
-            <img class="float-md-right" src="images/petunjuk pengunaan/kiri.png" alt="Kiri" style="width:30px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol previous dan next halaman Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/zoom.png" alt="Zoom" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol untuk memperbesar tampilan Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/perkecil.png" alt="Perkecil" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol untuk memperkecil tampilan Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/fullscreen.png" alt="fullscreen" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol untuk mode Fullscreen pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/play.png" alt="play" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol untuk mode Slideshow pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/list.png" alt="list" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol untuk menampilkan isi pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/halaman.png" alt="halaman" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol untuk menampilkan Halaman pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/share.png" alt="halaman" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol mode berbagi pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/volume.png" alt="volume" style="width:50px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol Play atau Mute audio Flipbook pada Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/unduh.png" alt="unduh" style="width:45px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol unduh Buku Antikorupsi</h4>
-          </div>
-        </div>
-
-        <div class="row pl-md-5 pr-md-5 mb-5">
-          <div class="col-md-3 col-sm-12">
-            <img class="float-md-right" src="images/petunjuk pengunaan/simpan.png" alt="simpan" style="width:40px;">
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <h4 class="float-md-left">Tombol menyimpan Halaman Buku Antikorupsi</h4>
-          </div>
-        </div>
-
+        <ul class="list-group pl-md-5 pr-md-5 fungsi">
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">1</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/Group 76.png" alt="Jumlah Halaman" style="width:50px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Menampilkan jumlah halaman pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill ">2</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left d-D" src="images/petunjuk pengunaan/kiri.png" alt="Kiri" style="width:30px;">
+                <img class="float-md-left d-D" src="images/petunjuk pengunaan/kanan.png" alt="Kiri" style="width:30px;">
+                <img class="float-right d-T" src="images/petunjuk pengunaan/kanan.png" alt="Kiri" style="width:30px;">
+                <img class="float-right d-T" src="images/petunjuk pengunaan/kiri.png" alt="Kiri" style="width:30px;">
+                <img class="d-M" src="images/petunjuk pengunaan/kiri.png" alt="Kiri" style="width:30px;">
+                <img class="d-M" src="images/petunjuk pengunaan/kanan.png" alt="Kiri" style="width:30px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol previous dan next halaman Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">3</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/zoom.png" alt="Zoom" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol untuk memperbesar tampilan Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">4</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/perkecil.png" alt="Perkecil" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol untuk memperkecil tampilan Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">5</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/fullscreen.png" alt="fullscreen" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol untuk mode Fullscreen pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">6</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/play.png" alt="play" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol untuk mode Slideshow pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">7</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/list.png" alt="list" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol untuk menampilkan isi pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">8</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/halaman.png" alt="halaman" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol untuk menampilkan Halaman pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">9</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/share.png" alt="halaman" style="width:35px;">
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <h5 class="float-md-left">Tombol mode berbagi pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">10</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/volume.png" alt="volume" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol Play atau Mute audio Flipbook pada Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">11</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/unduh.png" alt="unduh" style="width:35px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol unduh Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item mb-4">
+            <div class="row">
+              <div class="col-md-1 col-sm-12">
+                <span class="badge badge-danger badge-pill">12</span>
+              </div>
+              <div class="col-md-2 col-sm-12">
+                <img class="float-md-left" src="images/petunjuk pengunaan/simpan.png" alt="simpan" style="width:30px;">
+              </div>
+              <div class="col-md-9 col-sm-12">
+                <h5 class="float-md-left">Tombol menyimpan Halaman Buku Antikorupsi</h5>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- End Of Head 4 -->
@@ -313,6 +422,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -328,7 +438,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -345,6 +455,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -360,7 +471,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -377,6 +488,7 @@
     					<ul class="list-unstyled list-inline social text-center">
     						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+    						<li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
     						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
     					</ul>
     				</div>
@@ -392,7 +504,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
   				  </div>
   			  </div>
         </div>
@@ -408,61 +520,6 @@
       </main>
     </div>
     <!-- End Of Footer -->
-
-
-    <!-- MODAL -->
-    <div class="modal fade" id="modalPdf" tabindex="-1" role="dialog" aria-labelledby="PdfModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <div class="row justify-content-md-center modal-row">
-              <div class="col-sm-12 col-md-5 thumb-img">
-                <button type="button" class="close float-left d-D" data-dismiss="modal" aria-label="Close" style="top: 0 !important; margin-top: -20px; margin-right:-20px;">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <button type="button" class="close float-left d-T" data-dismiss="modal" aria-label="Close" style="top: 0 !important; margin-top: -20px; margin-right:-20px;">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <button type="button" class="close float-right d-M" data-dismiss="modal" aria-label="Close" style="top: 0 !important; margin-top: -20px; margin-right:-20px;">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <br>
-                <img class="img-thumbnail" alt="pdf thumbnail" id="img-modal" style="width:100%; height: auto;">
-              </div>
-              <div class="col-sm-12 col-md-7 pdf-info">
-                <div class="info-modal">
-                  <br>
-                  <div class="row d-D">
-                    <div class="col-6">
-                      <p class="p-0 m-0" id="unduh"></p>
-                      <p class="p-0 m-0" id="baca"></p>
-                    </div>
-                    <div class="col-6"><p id="pdfSize" class="text-right"></p></div>
-                  </div>
-                  <div class="row d-T">
-                    <div class="col-6">
-                      <p class="p-0 m-0" id="unduh"></p>
-                      <p class="p-0 m-0" id="baca"></p>
-                    </div>
-                    <div class="col-6"><p id="pdfSize" class="text-right"></p></div>
-                  </div>
-                  <p id="headModal"></p>
-                  <p id="descModal"></p>
-                  <div class="row">
-                    <div class="col-6">
-                      <a id="read" class="btn-modal-pdf btn btn-danger w-100 mb-3">Baca</a>
-                    </div>
-                    <div class="col-6">
-                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
      <!--JavaScript at end of body for optimized loading-->

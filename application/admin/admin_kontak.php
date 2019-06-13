@@ -37,9 +37,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title>KPK Admin</title>
+    <title>Buku Antikorupsi | List Mail</title>
     <!-- favicon  -->
-    <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+    <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

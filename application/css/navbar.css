@@ -22,6 +22,16 @@
       transition: 0.2s;
       color: white !important;
     }
+
+    #panduanantikorupsiDropdown:hover {
+      border-radius: 0 !important;
+      background-color: white !important;
+      color: #f65e49 !important;
+    }
+    #panduanantikorupsiDropdown{
+      color: white !important;
+      background-color: #f65e49 !important;
+    }
   }
 
 /* TABLET */
@@ -48,6 +58,16 @@
       transition: 0.2s;
       color: white !important;
     }
+
+    #panduanantikorupsiDropdown:hover {
+      border-radius: 0 !important;
+      background-color: white !important;
+      color: #f65e49 !important;
+    }
+    #panduanantikorupsiDropdown{
+      color: white !important;
+      background-color: #f65e49 !important;
+    }
   }
 
 /* DESKTOP */
@@ -69,6 +89,28 @@
       border-radius: 15px !important;
     }
 
+    .sub-dropdown {
+      z-index: 9999;
+      top: 80px !important;
+      left: 185px !important;
+    }
+    .dropdown a {
+      text-decoration: none;
+    }
+
+    #panduanantikorupsiDropdown:hover {
+      border-radius: 0 !important;
+      background-color: white !important;
+      color: #f65e49 !important;
+    }
+    #panduanantikorupsiDropdown{
+      color: white !important;
+      background-color: #f65e49 !important;
+    }
+
+    .sub-dropdown a {
+      text-align: left !important;
+    }
   }
 
 

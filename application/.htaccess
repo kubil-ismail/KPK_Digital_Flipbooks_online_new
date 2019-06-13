@@ -15,4 +15,7 @@ RewriteRule ^kategori/PendidikanAntiKorupsi?$ kategori/pendidikanAntiKorupsi.php
 RewriteRule ^kategori/Politik?$ kategori/politik.php
 RewriteRule ^kategori/Umum?$ kategori/umum.php
 
+RewriteRule ^kategori/PendidikanDasarDanMenengah?$ kategori/panduanPendidikanAntikorupsi/dasarMenengah.php
+RewriteRule ^kategori/Pendidikantinggi?$ kategori/panduanPendidikanAntikorupsi/tinggi.php
+
 RewriteRule ^admin/kpk?$ admin/index.php

@@ -5,9 +5,9 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <title>KPK Digital Flipbook | Anak</title>
+     <title>Buku Antikorupsi | Anak</title>
      <!-- favicon  -->
-     <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+     <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
      <!-- Flipbook CSS -->
      <link rel="stylesheet" href="../css/flipbook.style.css">
      <!--Import Bootstrap.css-->
@@ -65,11 +65,18 @@
                  Kategori
                </a>
                <div class="dropdown-menu bg-red-light" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item bg-white clr-red-light item-active" href="#" style="color:#f65e49 !important;">Anak</a>
+                 <a class="dropdown-item bg-white clr-red-light item-active d-D" href="#" style="color:#f65e49 !important;">Anak</a>
+                 <a class="dropdown-item bg-white clr-red-light item-active d-T" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Anak</a>
+                 <a class="dropdown-item bg-white clr-red-light item-active d-M" href="#" data-toggle="collapse" data-target="#navbarNav" style="color:#f65e49 !important;">Anak</a>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="DuniaUsaha">Dunia Usaha</a>
                  <div class="dropdown-divider"></div>
-                 <a class="dropdown-item" href="PendidikanAntiKorupsi">Panduan Pendidikan <br>Antikorupsi</a>
+                 <a class="dropdown-item dropdown-submenu dropdown-toggle clr-red-light" href="#" id="panduanantikorupsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Panduan Pendidikan <br>Antikorupsi</a>
+                 <div class="dropdown-menu sub-dropdown" aria-labelledby="panduanantikorupsiDropdown">
+                    <a class="dropdown-item" href="PendidikanDasarDanMenengah">Pendidikan<br> Dasar dan Menengah</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Pendidikantinggi">Pendidikan Tinggi</a>
+                 </div>
                  <div class="dropdown-divider"></div>
                  <a class="dropdown-item" href="Politik">Politik</a>
                  <div class="dropdown-divider"></div>
@@ -207,7 +214,6 @@
     <!-- End Of ANAK PDF -->
 
 
-
     <!-- Footer -->
     <div class="footer">
       <footer class="d-D">
@@ -218,16 +224,17 @@
             </div>
           </div>
           <div class="row">
-    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
-    					<ul class="list-unstyled list-inline social text-center">
-    						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
-    						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
-    						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
-    					</ul>
-    				</div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+                <li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
           </div>
           <div class="row">
-  				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <div class="address">
                 <p>GEDUNG MERAH PUTIH KPK</p>
                 <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
@@ -237,9 +244,9 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
-  				  </div>
-  			  </div>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+            </div>
+          </div>
         </div>
       </footer>
       <footer class="d-T">
@@ -250,16 +257,17 @@
             </div>
           </div>
           <div class="row">
-    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
-    					<ul class="list-unstyled list-inline social text-center">
-    						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
-    						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
-    						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
-    					</ul>
-    				</div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+                <li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
           </div>
           <div class="row">
-  				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <div class="address">
                 <p>GEDUNG MERAH PUTIH KPK</p>
                 <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
@@ -269,9 +277,9 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
-  				  </div>
-  			  </div>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+            </div>
+          </div>
         </div>
       </footer>
       <footer class="d-M">
@@ -282,16 +290,17 @@
             </div>
           </div>
           <div class="row">
-    				<div class="col-xs-12 col-sm-12 col-md-12 mt-2">
-    					<ul class="list-unstyled list-inline social text-center">
-    						<li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
-    						<li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
-    						<li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
-    					</ul>
-    				</div>
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></li>
+                <li class="list-inline-item"><a href="https://twitter.com/kpk_ri"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
           </div>
           <div class="row">
-  				  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <div class="address">
                 <p>GEDUNG MERAH PUTIH KPK</p>
                 <p>Jln. Kuningan Persada Kav. 4 Jakarta Selatan 12950</p>
@@ -301,9 +310,9 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
-  				  </div>
-  			  </div>
+              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+            </div>
+          </div>
         </div>
       </footer>
       <main class="d-D footer-images">
@@ -370,7 +379,7 @@
                       <a id="read" class="btn-modal-pdf btn btn-danger w-100 mb-3">Baca</a>
                     </div>
                     <div class="col-6">
-                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Download</a>
+                      <a id="downloadPdf" href="" class="btn-modal-pdf btn btn-danger w-100 mb-3" download>Unduh</a>
                     </div>
                   </div>
                 </div>

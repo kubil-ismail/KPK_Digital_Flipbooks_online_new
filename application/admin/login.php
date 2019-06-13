@@ -35,9 +35,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Login Admin</title>
+    <title>Buku Antikorupsi | Login Admin</title>
     <!-- favicon  -->
-    <link rel="shortcut icon" href="../images/Logo KPK/icon.png">
+    <link rel="shortcut icon" href="../images/Logo KPK/favicon.png">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -69,7 +69,7 @@
         <div class="user_card">
           <div class="d-flex justify-content-center">
             <div class="brand_logo_container">
-              <img src="../images/KPK_Logo.svg" class="brand_logo" alt="Logo">
+              <img src="../images/Logo KPK/Logo BJH.png" class="brand_logo" alt="Logo">
             </div>
           </div>
           <div class="d-flex justify-content-center form_container">
