@@ -82,7 +82,7 @@
     <div id="search">
       <button type="button" class="close">×</button>
       <form method="get" action="search.php">
-          <input type="text" name="search" placeholder="Cari buku..." autocomplete="off" id="keyword">
+          <input type="text" name="search" placeholder="Cari judul buku..." autocomplete="off" id="keyword">
           <button type="submit" class="btn btn-danger">Search</button>
       </form>
     </div>
