@@ -96,7 +96,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
        <div class="container">
-         <a class="navbar-brand" href="index.php">
+         <a class="navbar-brand" href="home">
            <img src="images/logo.png" alt="KPK Logo" width="150">
          </a>
          <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
