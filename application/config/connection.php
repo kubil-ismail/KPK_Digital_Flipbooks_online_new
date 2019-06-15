@@ -109,3 +109,43 @@ function search($keyword){
   $query = "SELECT * FROM pdf WHERE pdf_title LIKE '%$keyword%'";
   return query($query);
 }
+
+function edit_pdf($data)
+{
+  global $conn;
+
+  $id = htmlspecialchars($data["id"]);
+  $kategori_id = htmlspecialchars($data["kategori_id"]);
+  $sub_kategori_id = htmlspecialchars($data["sub_kategori_id"]);
+  $pdf_thumb = htmlspecialchars($data["pdf_thumb"]);
+  $pdf_title =htmlspecialchars($data["pdf_title"]);
+  $pdf_desc = htmlspecialchars($data["pdf_desc"]);
+  $pdf_size = htmlspecialchars($data["pdf_size"]);
+  $pdf_url = htmlspecialchars($data["pdf_url"]);
+  $pdf_modal = htmlspecialchars($data["pdf_modal"]);
+  $pdf_read_count = htmlspecialchars($data["pdf_read_count"]);
+  $pdf_download_count = htmlspecialchars($data["pdf_download_count"]);
+  $pdf_status_id = 1;
+  $pdf_name = $pdf_title.".pdf";
+
+  //query insert data
+  $query = "UPDATE pdf SET
+        kategori_id = '$kategori_id',
+        sub_kategori_id = '$sub_kategori_id',
+        pdf_thumb = '$pdf_thumb',
+        pdf_title = '$pdf_title',
+        pdf_desc = '$pdf_desc',
+        pdf_size = '$pdf_size',
+        pdf_url = '$pdf_url',
+        pdf_name = '$pdf_name',
+        pdf_modal = '$pdf_modal',
+        pdf_read_count = '$pdf_read_count',
+        pdf_download_count = '$pdf_download_count',
+        pdf_status_id = '$pdf_status_id'
+
+        WHERE id = $id ";
+
+  mysqli_query($conn, $query);
+
+  return mysqli_affected_rows($conn);
+}

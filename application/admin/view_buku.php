@@ -8,7 +8,7 @@
     }
 
     if(!isset($_GET['id'])) {
-        header("Location: ./admin_kontak.php");
+        header("Location: ./admin_buku.php");
         exit;
     }
 
@@ -16,7 +16,7 @@
 
     $buku = mysqli_query($conn, "SELECT * FROM pdf WHERE id='$id'");
     if(!$buku) {
-        header("Location: ./admin_kontak.php");
+        header("Location: ./admin_buku.php");
         exit;
     }
 

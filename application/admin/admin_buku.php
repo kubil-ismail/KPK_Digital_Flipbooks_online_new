@@ -152,9 +152,9 @@
                 <?php endif; ?>
                 <!-- End Of Status -->
                 <td>
-                  <a href="view_buku.php?id=<?= $res->id ?>" class="badge badge-info"> view </a>
-                  <a href="function_buku_active.php?id=<?= $res->id ?>" class="badge badge-success"> activated </a>
-                  <a href="function_buku_nonactive.php?id=<?= $res->id ?>" class="badge badge-danger"> nonactivated </a>
+                  <a href="view_buku.php?id=<?= $res->id ?>" class="badge badge-info"> View </a>
+                  <a href="edit_buku.php?id=<?= $res->id ?>" class="badge badge-warning pdf_edit"> Edit </a>
+                  <a href="#" class="badge badge-danger" onclick="return confirm('Yakin ?');"> Delete </a>
                 </td>
               </tr>
             <?php endforeach; ?>
@@ -162,53 +162,57 @@
       </table>
     <?php endif; ?>
 
-      <?php if (!isset($_GET['keyword'])): ?>
-      <nav aria-label="Page">
-        <ul class="pagination justify-content-center">
-          <?php if (isset($_GET['page']) && $jumlah>0): ?>
-            <!-- Back -->
-            <?php if ($_GET['page'] > 1): ?>
-              <li class="page-item">
-                <a class="page-link" href="admin_buku.php?page=1" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="admin_buku.php?page=<?= $_GET['page']-1; ?>">
-                  <span aria-hidden="true">&lsaquo;</span>
-                </a>
-              </li>
-            <?php endif; ?>
-          <?php endif; ?>
-          <?php for($a = 1; $a <= $count; $a++): ?>
-            <?php if ($_GET['page'] == $a): ?>
-            <li class="page-item active">
-            <?php else: ?>
+    <?php if (!isset($_GET['keyword'])): ?>
+    <nav aria-label="Page">
+      <ul class="pagination justify-content-center">
+        <?php if (isset($_GET['page']) && $jumlah>0): ?>
+          <!-- Back -->
+          <?php if ($_GET['page'] > 1): ?>
             <li class="page-item">
-            <?php endif; ?>
-              <a class="page-link" href="admin_buku.php?page=<?= $a ?>"><?= $a ?></a>
+              <a class="page-link" href="admin_buku.php?page=1" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
             </li>
-          <?php endfor; ?>
-          <?php if (isset($_GET['page']) && $jumlah>0): ?>
-            <!-- Next -->
-            <?php if ($_GET['page'] <= $jumlah): ?>
-              <li class="page-item">
-                <a class="page-link" href="admin_buku.php?page=<?= $_GET['page']+1;?>">
-                  <span aria-hidden="true">&rsaquo;</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="admin_buku.php?page=<?= $count; ?>" aria-label="Previous">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            <?php endif; ?>
+            <li class="page-item">
+              <a class="page-link" href="admin_buku.php?page=<?= $_GET['page']-1; ?>">
+                <span aria-hidden="true">&lsaquo;</span>
+              </a>
+            </li>
           <?php endif; ?>
-        </ul>
-      </nav>
-      <?php endif; ?>
+        <?php endif; ?>
+        <?php for($a = 1; $a <= $count; $a++): ?>
+          <?php if ($_GET['page'] == $a): ?>
+          <li class="page-item active">
+          <?php else: ?>
+          <li class="page-item">
+          <?php endif; ?>
+            <a class="page-link" href="admin_buku.php?page=<?= $a ?>"><?= $a ?></a>
+          </li>
+        <?php endfor; ?>
+        <?php if (isset($_GET['page']) && $jumlah>0): ?>
+          <!-- Next -->
+          <?php if ($_GET['page'] <= $jumlah): ?>
+            <li class="page-item">
+              <a class="page-link" href="admin_buku.php?page=<?= $_GET['page']+1;?>">
+                <span aria-hidden="true">&rsaquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="admin_buku.php?page=<?= $count; ?>" aria-label="Previous">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          <?php endif; ?>
+        <?php endif; ?>
+      </ul>
+    </nav>
+    <?php endif; ?>
     <!-- End Of List Buku -->
+
     <br>
     <br><br>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
