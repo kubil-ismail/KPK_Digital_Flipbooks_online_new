@@ -86,10 +86,10 @@
                </div>
              </li>
              <li class="nav-item mx-4">
-               <a class="nav-link clr-white" href="../petunjuk.php">Petunjuk</a>
+               <a class="nav-link clr-white" href="../petunjuk">Petunjuk</a>
              </li>
              <li class="nav-item mx-4">
-               <a class="nav-link clr-white" href="../kontak.php">Kontak</a>
+               <a class="nav-link clr-white" href="../kontak">Kontak</a>
              </li>
              <li class="nav-item mx-4">
                <a class="nav-link clr-white" href="#search">
