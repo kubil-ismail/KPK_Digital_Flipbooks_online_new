@@ -1478,7 +1478,7 @@ var data = {
 
 //ModulPenguatanNilai_NilaiAntikorupsiTingkatSD_MIKelas4_6
   "ModulPenguatanNilai_NilaiAntikorupsiTingkatSD_MIKelas4_6": {
-    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6.pdf',
+    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf',
     layout:3,
     currentPage:{vAlign:"bottom", hAlign:"left"},
     // BTN SETTING
@@ -1509,22 +1509,22 @@ var data = {
     },
     facebook : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf"
     },
     google_plus : {enabled: false},
     email : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6.pdf",
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf",
       title: "PDF KPK",
       description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
     },
     twitter : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf"
     },
     pinterest : {
     enabled: true,
-    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SD _ MI Kelas 4-6.pdf"
+    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf"
     }
   },
 
