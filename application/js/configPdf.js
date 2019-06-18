@@ -1426,7 +1426,7 @@ var data = {
 
 //ModulPenguatanNilaiAntikorupsiSD_MIKelas1_3
   "ModulPenguatanNilaiAntikorupsiSD_MIKelas1_3": {
-    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3.pdf',
+    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas1_3/Modul Penguatan Nilai Antikorupsi SD Kelas1_3.pdf',
     layout:3,
     currentPage:{vAlign:"bottom", hAlign:"left"},
     // BTN SETTING
@@ -1457,28 +1457,28 @@ var data = {
     },
     facebook : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas1_3/Modul Penguatan Nilai Antikorupsi SD Kelas1_3.pdf"
     },
     google_plus : {enabled: false},
     email : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3.pdf",
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas1_3/Modul Penguatan Nilai Antikorupsi SD Kelas1_3.pdf",
       title: "PDF KPK",
       description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
     },
     twitter : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas1_3/Modul Penguatan Nilai Antikorupsi SD Kelas1_3.pdf"
     },
     pinterest : {
     enabled: true,
-    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3/ModulPenguatanNilai_NilaiAntikorupsiSD_MI Kelas1_3.pdf"
+    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas1_3/Modul Penguatan Nilai Antikorupsi SD Kelas1_3.pdf"
     }
   },
 
 //ModulPenguatanNilai_NilaiAntikorupsiTingkatSD_MIKelas4_6
   "ModulPenguatanNilai_NilaiAntikorupsiTingkatSD_MIKelas4_6": {
-    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf',
+    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas 4_6/Modul Penguatan Nilai Antikorupsi SD_Kelas 4_6.pdf',
     layout:3,
     currentPage:{vAlign:"bottom", hAlign:"left"},
     // BTN SETTING
@@ -1509,22 +1509,22 @@ var data = {
     },
     facebook : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas 4_6/Modul Penguatan Nilai Antikorupsi SD_Kelas 4_6.pdf"
     },
     google_plus : {enabled: false},
     email : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf",
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas 4_6/Modul Penguatan Nilai Antikorupsi SD_Kelas 4_6.pdf",
       title: "PDF KPK",
       description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
     },
     twitter : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas 4_6/Modul Penguatan Nilai Antikorupsi SD_Kelas 4_6.pdf"
     },
     pinterest : {
     enabled: true,
-    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6/Modul Penguatan Nilai-Nilai Antikorupsi SD_Kelas 4-6.pdf"
+    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi SD Kelas 4_6/Modul Penguatan Nilai Antikorupsi SD_Kelas 4_6.pdf"
     }
   },
 
@@ -1582,7 +1582,7 @@ var data = {
 
 //ModulPenguatanNilaiAntikorupsiTingkatSMA
   "ModulPenguatanNilaiAntikorupsiTingkatSMA": {
-    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA.pdf',
+    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi Tingkat_SMA/Modul Penguatan Nilai Antikorupsi Tingkat_SMA.pdf',
     layout:3,
     currentPage:{vAlign:"bottom", hAlign:"left"},
     // BTN SETTING
@@ -1613,28 +1613,28 @@ var data = {
     },
     facebook : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi Tingkat_SMA/Modul Penguatan Nilai Antikorupsi Tingkat_SMA.pdf"
     },
     google_plus : {enabled: false},
     email : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA.pdf",
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi Tingkat_SMA/Modul Penguatan Nilai Antikorupsi Tingkat_SMA.pdf",
       title: "PDF KPK",
       description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
     },
     twitter : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi Tingkat_SMA/Modul Penguatan Nilai Antikorupsi Tingkat_SMA.pdf"
     },
     pinterest : {
     enabled: true,
-    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA/Modul Penguatan Nilai-Nilai Antikorupsi pada Pendidikan dasar dan Menengah Tingkat SMA.pdf"
+    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Dasar dan Menengah/Modul Penguatan Nilai Antikorupsi Tingkat_SMA/Modul Penguatan Nilai Antikorupsi Tingkat_SMA.pdf"
     }
   },
 
 //readPdfBukuPanduanDosenPembelajaranPendidikanAntiKorupsiUntukPerguruanTinggi
   "readPdfBukuPanduanDosenPembelajaranPendidikanAntiKorupsiUntukPerguruanTinggi": {
-    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi.pdf',
+    pdfUrl: 'output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi.pdf',
     layout:3,
     currentPage:{vAlign:"bottom", hAlign:"left"},
     // BTN SETTING
@@ -1665,22 +1665,22 @@ var data = {
     },
     facebook : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi.pdf"
     },
     google_plus : {enabled: false},
     email : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi.pdf",
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi.pdf",
       title: "PDF KPK",
       description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
     },
     twitter : {
       enabled: true,
-      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi.pdf"
+      url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi.pdf"
     },
     pinterest : {
     enabled: true,
-    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi Untuk Perguruan Tinggi.pdf"
+    url: $('#url_hosting').val()+"output_pdf/Panduan Pendidikan Antikorupsi/Pendidikan Tinggi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi/Buku Panduan Dosen Pembelajaran Pendidikan Anti Korupsi.pdf"
     }
   },
 
