@@ -14,7 +14,11 @@ if(!isset($_GET['id'])) {
 }
 
 $id = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_GET['id']) ));
-
+$viewed = mysqli_query($conn, "UPDATE `contact` SET `status` = '1' WHERE `contact`.`id` = '$id'");
+if(!$viewed) {
+    header("Location: ./email");
+    exit;
+}
 $kontak = mysqli_query($conn, "SELECT * FROM contact WHERE id='$id'");
 if(!$kontak) {
     header("Location: ./email");
@@ -23,6 +27,8 @@ if(!$kontak) {
 
 $kontak_obj = mysqli_fetch_object($kontak);
 
+$emails = mysqli_query($conn, "SELECT * FROM contact WHERE status = 0");
+$jumlah = mysqli_num_rows($emails);
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +98,7 @@ $kontak_obj = mysqli_fetch_object($kontak);
       <li class="nav-item">
         <a class="nav-link" href="email">
           <i class="fas fa-fw fa-envelope-open-text"></i>
-          <span>Email Masuk</span>
+          <span>Email Masuk</span> <span class="badge badge-light"><?= $jumlah; ?></span>
         </a>
       </li>
 
@@ -161,15 +167,6 @@ $kontak_obj = mysqli_fetch_object($kontak);
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-          <!-- Nav -->
-            <div class="card mb-3">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link text-danger" href="email"><i class="fas fa-arrow-left"></i></a>
-                </li>
-              </ul>
-            </div>
-          <!-- End Nav -->
 
           <!-- View Pdf -->
           <div class="row">
@@ -178,15 +175,29 @@ $kontak_obj = mysqli_fetch_object($kontak);
 
               <!-- Default Card Example -->
               <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <a class="text-danger m-0" href="email"><i class="fas fa-arrow-left"></i></a>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-danger"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Pengaturan</div>
+                      <a class="dropdown-item" href="edit_email.php?id=<?= $kontak_obj->id ?>">Tandai Belum Dibaca</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal<?= $kontak_obj->id ?>">Hapus Email</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-body">
                   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800"><?= $kontak_obj->subject ?></h1>
+                    <h1 class="h3 mb-0 text-gray-900"><?= $kontak_obj->subject ?></h1>
                   </div>
                   <hr>
-                  <pre>Date : <?= $kontak_obj->created_at ?></pre>
-                  <p class="mt-3">From : <b><?= $kontak_obj->email ?> </b></p>
-                  <p>No Tlpn : <b><?= $kontak_obj->tlpn ?></b></p>
-                  <p class="mt-5"><?= $kontak_obj->pesan ?></p>
+                  <h6 class="text-gray-800"><?= $kontak_obj->created_at ?> WIB</h6>
+                  <h6 class="text-gray-800">From : <?= $kontak_obj->email ?></h6>
+                  <h6 class="text-gray-800">No Tlpn : <?= $kontak_obj->tlpn ?></h6>
+                  <hr>
+                  <p class="mt-2 text-gray-800"><?= $kontak_obj->pesan ?></p>
                 </div>
               </div>
 
@@ -240,6 +251,26 @@ $kontak_obj = mysqli_fetch_object($kontak);
       </div>
     </div>
   </div>
+
+  <!-- Delete Modal-->
+  <div class="modal fade" id="deleteModal<?= $kontak_obj->id ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Yakin Ingin Menghapus Buku ?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Menghapus Email akan menghapus permanent pada email tersebut</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="delete_kontak.php?id=<?= $kontak_obj->id ?>">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>

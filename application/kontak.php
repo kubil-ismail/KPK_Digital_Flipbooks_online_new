@@ -25,7 +25,7 @@
     $final_pesan .= "Call Center: 198 \n";
     $final_pesan .= "Email : informasi@kpk.go.id";
 
-    $query = mysqli_query($conn, "INSERT INTO contact SET nama='$nama', email='$email', tlpn='$tlpn', subject='$subject', pesan='$pesan', created_at=now()");
+    $query = mysqli_query($conn, "INSERT INTO contact SET nama='$nama', email='$email', tlpn='$tlpn', subject='$subject', pesan='$pesan', created_at=now(), status=0");
 
     if(!$query) {
       $error = true;

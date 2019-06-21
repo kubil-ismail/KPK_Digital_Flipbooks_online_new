@@ -43,6 +43,9 @@ if (isset($_POST["edit"])) {
   }
 }
 
+$emails = mysqli_query($conn, "SELECT * FROM contact WHERE status = 0");
+$jumlah = mysqli_num_rows($emails);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -112,7 +115,7 @@ if (isset($_POST["edit"])) {
       <li class="nav-item">
         <a class="nav-link" href="email">
           <i class="fas fa-fw fa-envelope-open-text"></i>
-          <span>Email Masuk</span>
+          <span>Email Masuk</span> <span class="badge badge-light"><?= $jumlah; ?></span>
         </a>
       </li>
 

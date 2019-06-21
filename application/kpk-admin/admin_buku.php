@@ -11,6 +11,8 @@ while($data = mysqli_fetch_object($res)) {
     $res_obj[] = $data;
 }
 
+$emails = mysqli_query($conn, "SELECT * FROM contact WHERE status = 0");
+$jumlah = mysqli_num_rows($emails);
 
  ?>
 <!DOCTYPE html>
@@ -36,7 +38,20 @@ while($data = mysqli_fetch_object($res)) {
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+  <style media="screen">
+    .active .page-link{
+      background-color: #e74a3b !important;
+      border-color: #e74a3b !important;
+      color: white !important;
+    }
+    .page-link {
+      color: #e74a3b;
+    }
+    .page-link:hover {
+      background-color: #f0f1f5;
+      color: #e74a3b;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -81,7 +96,7 @@ while($data = mysqli_fetch_object($res)) {
       <li class="nav-item">
         <a class="nav-link" href="email">
           <i class="fas fa-fw fa-envelope-open-text"></i>
-          <span>Email Masuk</span>
+          <span>Email Masuk</span> <span class="badge badge-light"><?= $jumlah; ?></span>
         </a>
       </li>
 
@@ -208,9 +223,9 @@ while($data = mysqli_fetch_object($res)) {
                       <td><?= $res->pdf_read_count; ?></td>
                       <td><?= $res->pdf_download_count; ?></td>
                       <td>
-                        <a href="view_buku.php?id=<?= $res->id ?>" class="badge badge-info"> View </a>
-                        <a href="edit_buku.php?id=<?= $res->id ?>" class="badge badge-warning pdf_edit"> Edit </a>
-                        <a class="badge badge-danger" href="#" data-toggle="modal" data-target="#deleteModal<?= $res->id ?>">Delete</a>
+                        <a href="view_buku.php?id=<?= $res->id ?>" class="badge badge-info p-2"> View <i class="fas fa-fw fa-eye"></i></a>
+                        <a href="edit_buku.php?id=<?= $res->id ?>" class="badge badge-warning pdf_edit p-2 my-1"> Edit <i class="fas fa-fw fa-edit"></i></a>
+                        <a class="badge badge-danger p-2" href="#" data-toggle="modal" data-target="#deleteModal<?= $res->id ?>">Delete  <i class="fas fa-fw fa-trash-alt"></i></a>
                       </td>
                     </tr>
                     <!-- Delete Modal-->
