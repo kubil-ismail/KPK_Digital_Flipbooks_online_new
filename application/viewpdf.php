@@ -35,16 +35,19 @@
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
-     <title><?= $data['pdf_title'] ?></title>
+     <title><?= $data['pdf_url'] ?></title>
      <!-- favicon  -->
      <link rel="shortcut icon" href="images/Logo KPK/favicon.png">
      <meta charset="utf-8">
      <link rel="stylesheet" href="css/flipbook.style.css">
      <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+     <meta name="description" content="Dengan membaca, kamu telah berpartisipasi dalam upaya pemberantasan korupsi. Bagikan semangat antikorupsi di sekitarmu">
+     <meta name="author" content="Buku Antikorupsi">
    </head>
    <body>
      <input type="hidden" name="" id="data" value="<?= $data['pdf_modal'] ?>">
      <input type="hidden" name="" id="url_hosting" value="<?= BASEURL; ?>">
+     <input type="hidden" name="" id="pdf_url" value="<?= $data['pdf_url'] ?>">
       <div id="page">
 
       </div>
@@ -54,6 +57,7 @@
       <script src="js/flipbook.min.js"></script>
       <script src="js/configPdf.js"></script>
       <script type="text/javascript">
+
         $("#page").flipBook(data[$('#data').val()]);
       </script>
    </body>

@@ -1,0 +1,13 @@
+Options -Indexes
+Options -Multiviews
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^login?$ login.php
+RewriteRule ^home?$ admin_buku.php
+RewriteRule ^tambah_buku?$ tambah_buku.php
+RewriteRule ^email?$ admin_kontak.php
+RewriteRule ^ubah_password?$ ubah_password.php
+RewriteRule ^logout?$ logout.php

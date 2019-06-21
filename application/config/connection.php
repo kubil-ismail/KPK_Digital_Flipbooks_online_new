@@ -116,7 +116,11 @@ function edit_pdf($data)
 
   $id = htmlspecialchars($data["id"]);
   $kategori_id = htmlspecialchars($data["kategori_id"]);
-  $sub_kategori_id = htmlspecialchars($data["sub_kategori_id"]);
+  if (isset($data["sub_kategori_id"])) {
+    $sub_kategori_id = htmlspecialchars($data["sub_kategori_id"]);
+  } else {
+    $sub_kategori_id = '';
+  }
   $pdf_thumb = htmlspecialchars($data["pdf_thumb"]);
   $pdf_title =htmlspecialchars($data["pdf_title"]);
   $pdf_desc = htmlspecialchars($data["pdf_desc"]);
@@ -131,7 +135,7 @@ function edit_pdf($data)
   //query insert data
   $query = "UPDATE pdf SET
         kategori_id = '$kategori_id',
-        sub_kategori_id = '$sub_kategori_id',
+        sub_kategori = '$sub_kategori_id',
         pdf_thumb = '$pdf_thumb',
         pdf_title = '$pdf_title',
         pdf_desc = '$pdf_desc',
@@ -146,6 +150,40 @@ function edit_pdf($data)
         WHERE id = $id ";
 
   mysqli_query($conn, $query);
+
+  return mysqli_affected_rows($conn);
+}
+function ubah_password($data){
+  global $conn;
+
+  $old_username = mysqli_real_escape_string($conn,htmlspecialchars($data["old_username"]));
+  $old_pass = mysqli_real_escape_string($conn,htmlspecialchars($data["old_pass"]));
+  $new_pass = mysqli_real_escape_string($conn,htmlspecialchars($data["new_pass"]));
+  $new_username = mysqli_real_escape_string($conn,htmlspecialchars($data["new_username"]));
+  $confirm_pass = mysqli_real_escape_string($conn,htmlspecialchars($data["confirm_pass"]));
+
+  $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$old_username'");
+  //cek username
+  if (mysqli_num_rows($result) === 1) {
+    //cek password
+    $row = mysqli_fetch_assoc($result);
+    if (password_verify($old_pass, $row["password"])) {
+      if ($new_pass !== $confirm_pass) {
+  			echo "<script>
+  					alert('konfirmasi password gagal');
+  			      </script>";
+  	      	return false;
+  		} else {
+        $new_pass = password_hash($new_pass, PASSWORD_DEFAULT);
+        $query = "UPDATE users SET username = '$new_username', password = '$new_pass' WHERE username = '$old_username' ";
+        mysqli_query($conn, $query);
+      }
+    }
+  } else {
+    echo "<script>
+        alert('Akses di tolak');
+        </script>";
+  }
 
   return mysqli_affected_rows($conn);
 }
