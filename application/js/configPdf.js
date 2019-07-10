@@ -1309,6 +1309,57 @@ var data = {
     url: $('#url_hosting').val()+"output_pdf/Dunia Usaha/Modul Integritas Bisnis 10/Modul Integritas Bisnis 10.pdf"
     }
   },
+  //PanduanCegahKorupsi
+    "PanduanCegahKorupsi": {
+      pdfUrl: 'output_pdf/Dunia Usaha/Panduan cegah korupsi/Panduan cegah korupsi.pdf',
+      layout:3,
+      currentPage:{vAlign:"bottom", hAlign:"left"},
+      // BTN SETTING
+      btnToc : {
+        enabled: true,
+        title: "Table of content",
+        icon: "fa-list-ol",
+        hideOnMobile: true
+      },
+      btnDownloadPdf : {
+        forceDownload: true,
+        icon: "fa-download"
+      },
+      btnPrint : {hideOnMobile:true},
+      btnDownloadPages : {enabled: false},
+      btnColor:'#ff2e2e',
+      sideBtnColor:'#ff2e2e',
+      sideBtnSize:60,
+      sideBtnBackground:"rgba(0,0,0,.7)",
+      sideBtnRadius:60,
+      btnSound:{vAlign:"top", hAlign:"left"},
+      btnAutoplay:{vAlign:"top", hAlign:"left"},
+      // SHARING
+      btnShare : {
+        enabled: true,
+        title: "Share",
+        icon: "fa-share-alt"
+      },
+      facebook : {
+        enabled: true,
+        url: $('#url_hosting').val()+"output_pdf/Dunia Usaha/Panduan cegah korupsi/Panduan cegah korupsi.pdf"
+      },
+      google_plus : {enabled: false},
+      email : {
+        enabled: true,
+        url: $('#url_hosting').val()+"output_pdf/Dunia Usaha/Panduan cegah korupsi/Panduan cegah korupsi.pdf",
+        title: "PDF KPK",
+        description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
+      },
+      twitter : {
+        enabled: true,
+        url: $('#url_hosting').val()+"output_pdf/Dunia Usaha/Panduan cegah korupsi/Panduan cegah korupsi.pdf"
+      },
+      pinterest : {
+      enabled: true,
+      url: $('#url_hosting').val()+"output_pdf/Dunia Usaha/Panduan cegah korupsi/Panduan cegah korupsi.pdf"
+      }
+    },
 
 
 
