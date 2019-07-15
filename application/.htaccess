@@ -1,3 +1,6 @@
+# Make all PHP code look like Another Language
+AddType application/x-httpd-php .py
+
 Options -Indexes
 Options -Multiviews
 
@@ -5,15 +8,15 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteRule ^home?$ index.php
-RewriteRule ^kontak?$ kontak.php
-RewriteRule ^petunjuk?$ petunjuk.php
+RewriteRule ^home?$ index.py
+RewriteRule ^kontak?$ kontak.py
+RewriteRule ^petunjuk?$ petunjuk.py
 
-RewriteRule ^kategori/Anak?$ kategori/anak.php
-RewriteRule ^kategori/DuniaUsaha?$ kategori/duniaUsaha.php
-RewriteRule ^kategori/PendidikanAntiKorupsi?$ kategori/pendidikanAntiKorupsi.php
-RewriteRule ^kategori/Politik?$ kategori/politik.php
-RewriteRule ^kategori/Umum?$ kategori/umum.php
+RewriteRule ^kategori/Anak?$ kategori/anak.py
+RewriteRule ^kategori/DuniaUsaha?$ kategori/duniaUsaha.py
+RewriteRule ^kategori/PendidikanAntiKorupsi?$ kategori/pendidikanAntiKorupsi.py
+RewriteRule ^kategori/Politik?$ kategori/politik.py
+RewriteRule ^kategori/Umum?$ kategori/umum.py
 
-RewriteRule ^kategori/PendidikanDasarDanMenengah?$ kategori/panduanPendidikanAntikorupsi/dasarMenengah.php
-RewriteRule ^kategori/Pendidikantinggi?$ kategori/panduanPendidikanAntikorupsi/tinggi.php
+RewriteRule ^kategori/PendidikanDasarDanMenengah?$ kategori/panduanPendidikanAntikorupsi/dasarMenengah.py
+RewriteRule ^kategori/Pendidikantinggi?$ kategori/panduanPendidikanAntikorupsi/tinggi.py

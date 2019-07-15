@@ -1,34 +1,52 @@
 <?php
   require "../config/connection.php";
+  use voku\helper\AntiXSS;
+  require_once __DIR__ . '/vendor/xss/autoload.php';
+  $antiXss = new AntiXSS();
 
   if(isset($_SESSION['login'])) {
       header("Location: ./home");
       exit;
   }
 
-  // $password = password_hash("kpkantikorupsi123", PASSWORD_DEFAULT);
-  // mysqli_query($conn, "INSERT INTO users SET username='kpk12345', password='$password'");
-  // exit;
-
   if(isset($_POST['login']))
   {
-      $username = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['username']) ));
-      $password = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['password']) ));
+    $username_xss = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['username']) ));
+    $password_xss = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['password']) ));
+    $captcha_xss = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['captcha']) ));
+    //xss clear
+    $username = $antiXss->xss_clean($username_xss);
+    $password = $antiXss->xss_clean($password_xss);
+    $captcha = $antiXss->xss_clean($captcha_xss);
 
-      $res = mysqli_query($conn, "SELECT * FROM users WHERE username='$username'");
+    if (isset($_SESSION["code"])) {
+      $true_captcha_xss = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_SESSION["code"]) ));
+      $true_captcha = $antiXss->xss_clean($true_captcha_xss);
+      if ($true_captcha != $captcha) {
+        echo "
+    			<script>
+    				alert('Kode Captha Salah');
+    				document.location.href='home';
+    			</script>
+    		";
+        exit;
+      } else {
+        $res = mysqli_query($conn, "SELECT * FROM users WHERE username='$username'");
 
-      if (mysqli_num_rows($res) === 1) {
-        //cek password
-        $row = mysqli_fetch_assoc($res);
-        if (password_verify($password, $row["password"])) {
-          //set session
-          $_SESSION['login'] = true;
-          $_SESSION['data'] = $row;
-          header("Location: ./home");
-          exit;
+        if (mysqli_num_rows($res) === 1) {
+          //cek password
+          $row = mysqli_fetch_assoc($res);
+          if (password_verify($password, $row["password"])) {
+            //set session
+            $_SESSION['login'] = true;
+            $_SESSION['data'] = $row;
+            header("Location: ./home");
+            exit;
+          }
         }
+        $error = true;
       }
-      $error = true;
+    }
   }
 ?>
 <!DOCTYPE html>
@@ -95,6 +113,13 @@
                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                       </div>
                       <input type="password" name="password" class="form-control input_pass" placeholder="password">
+                    </div>
+                    <img class="w-100" src="vendor/captcha/captcha.php" alt="captcha" />
+                    <div class="input-group my-2">
+                      <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-shield-alt"></i></span>
+                      </div>
+                      <input type="text" name="captcha" class="form-control input_pass" placeholder="captcha code" maxlength="5">
                     </div>
                     <div class="d-flex justify-content-center mt-3 login_container">
                       <button type="submit" name="login" class="btn login_btn">Login</button>

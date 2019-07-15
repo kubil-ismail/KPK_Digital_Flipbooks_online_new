@@ -22,9 +22,9 @@ $(document).ready(function () {
       $('#descModal').html(json.pdf_desc);
       $('#img-modal').attr("src", "../"+json.pdf_thumb);
       // $('.modal-read-button').attr("id", json.pdf_modal);
-      $("#read").attr("href", "../viewpdf.php?id="+json.id);
+      $("#read").attr("href", "../viewpdf.py?id="+json.id);
       $("#read").attr("target", "_blank");
-      $('#downloadPdf').attr('href',"../add_download.php?read="+json.id);
+      $('#downloadPdf').attr('href',"../add_download.py?read="+json.id);
       ido = json.id;
     });
   });
