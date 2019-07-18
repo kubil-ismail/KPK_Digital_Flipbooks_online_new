@@ -1,24 +1,33 @@
 <?php
 
   require "config/connection.php";
+  use voku\helper\AntiXSS;
+  require_once __DIR__ . '/vendor/autoload.php';
+  $antiXss = new AntiXSS();
 
   if(!isset($_GET['id'])) {
     header("Location: ./home");
     exit;
   }
 
+  if (filter_var($_GET['id'], FILTER_VALIDATE_INT) === false) {
+    header("Location: home");
+    exit;
+  }
+
   $id = mysqli_real_escape_string($conn, stripslashes(htmlspecialchars( $_GET['id'] ) ) );
+  $id = $antiXss->xss_clean($id);
 
-    if(!is_numeric( $id )) {
-      header("Location: ./home");
-      exit;
-    }
+  if(!is_numeric($id)) {
+    header("Location: ./home");
+    exit;
+  }
 
-    $data = mysqli_query($conn, "SELECT * FROM pdf WHERE id='$id'");
-    if(mysqli_num_rows($data) != 1) {
-      header("Location: home");
-      exit;
-    }
+  $data = mysqli_query($conn, "SELECT * FROM pdf WHERE id='$id'");
+  if(mysqli_num_rows($data) != 1) {
+    header("Location: home");
+    exit;
+  }
 
   $data = view_pdf($id)[0];
 
@@ -57,7 +66,6 @@
       <script src="js/flipbook.min.js"></script>
       <script src="js/configPdf.js"></script>
       <script type="text/javascript">
-
         $("#page").flipBook(data[$('#data').val()]);
       </script>
    </body>

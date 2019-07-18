@@ -1,13 +1,16 @@
 <?php
   require "config/connection.php";
+  use voku\helper\AntiXSS;
+  require_once __DIR__ . '/vendor/autoload.php';
+  $antiXss = new AntiXSS();
 
   if(isset($_POST['button'])) {
 
-    $nama = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['nama']) ));
-    $email = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['email']) ));
-    $tlpn = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['tlpn']) ));
-    $subject = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['subject']) ));
-    $pesan = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_POST['message']) ));
+    $nama = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($antiXss->xss_clean($_POST['nama'])) ));
+    $email = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($antiXss->xss_clean($_POST['email'])) ));
+    $tlpn = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($antiXss->xss_clean($_POST['tlpn'])) ));
+    $subject = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($antiXss->xss_clean($_POST['subject'])) ));
+    $pesan = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($antiXss->xss_clean($_POST['message'])) ));
 
     $final_pesan  = "Email info from KPK flipbook Website \n \n";
     $final_pesan .= "Nama : $nama \n";
@@ -83,7 +86,7 @@
     <!-- Search Fullscreen -->
     <div id="search">
       <button type="button" class="close">×</button>
-      <form method="get" action="search.py">
+      <form method="get" action="search.php">
           <input type="text" name="search" placeholder="Cari judul buku..." autocomplete="off" id="keyword">
           <button type="submit" class="btn btn-danger">Cari</button>
       </form>
@@ -274,7 +277,7 @@
                 <p>Email : informasi@kpk.go.id</p>
               </div>
               <br>
-              <p class="h6 copyright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+              <p class="h6 cophpright">Hak Cipta © 2019 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
             </div>
           </div>
         </div>

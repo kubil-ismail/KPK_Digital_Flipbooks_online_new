@@ -1,5 +1,6 @@
 <?php
   require "config/connection.php";
+
   $anak = get_pdf_limit(1);
   $dunia_usaha = get_pdf_limit(2);
   $pendidikan_anti_korupsi = get_pdf_limit(3);
@@ -42,7 +43,7 @@
     <!-- Search Fullscreen -->
     <div id="search">
       <button type="button" class="close">×</button>
-      <form method="get" action="search.py">
+      <form method="get" action="search.php">
           <input type="text" name="search" placeholder="Cari judul buku..." autocomplete="off" id="keyword">
           <button type="submit" class="btn btn-danger">Cari</button>
       </form>

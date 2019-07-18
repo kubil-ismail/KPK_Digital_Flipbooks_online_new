@@ -1,5 +1,8 @@
 <?php
   require "config/connection.php";
+  use voku\helper\AntiXSS;
+  require_once __DIR__ . '/vendor/autoload.php';
+  $antiXss = new AntiXSS();
 
   // Check
   if (!isset($_GET['search'])) {
@@ -10,6 +13,7 @@
   $page = 1;
   if(isset($_GET['page']) ){
     $page = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_GET['page']) ));
+    $page = $antiXss->xss_clean($page);
   } elseif (!isset($_GET['page'])) {
     $_GET['page'] = 1;
   }
@@ -17,6 +21,7 @@
   $search = "";
   if(isset($_GET['search']) ){
     $search = mysqli_real_escape_string( $conn, stripslashes( htmlspecialchars($_GET['search']) ));
+    $search = $antiXss->xss_clean($search);
   }
    $tampil = 5;
    $data = mysqli_query($conn, "SELECT * FROM pdf WHERE pdf_title LIKE '%$search%'");
@@ -111,7 +116,7 @@
      <!-- Search Fullscreen -->
      <div id="search">
        <button type="button" class="close">×</button>
-       <form method="get" action="search.py">
+       <form method="get" action="search.php">
            <input type="text" name="search" placeholder="Cari judul buku..." autocomplete="off" id="keyword">
            <button type="submit" class="btn btn-danger">Cari</button>
        </form>
@@ -222,10 +227,10 @@
               <p id="descModal" class="text-left"><?= $obj->pdf_desc; ?></p>
               <div class="row">
                 <div class="col-6">
-                  <a id="readSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="viewpdf.py?id=<?= $obj->id ?>" target="_blank">Baca</a>
+                  <a id="readSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="viewpdf.php?id=<?= $obj->id ?>" target="_blank">Baca</a>
                 </div>
                 <div class="col-6">
-                  <a id="downloadSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="add_download.py?read=<?= $obj->id ?>">Unduh</a>
+                  <a id="downloadSearch" class="btn-modal-pdf btn btn-danger w-100 mb-3" href="add_download.php?read=<?= $obj->id ?>">Unduh</a>
                 </div>
               </div>
             </div>
@@ -242,13 +247,13 @@
         <!-- First -->
         <?php if ($_GET['page'] > 1): ?>
           <li class="page-item">
-            <a class="page-link" href="./search.py?search=<?=$_GET['search'];?>&page=1" aria-label="Previous">
+            <a class="page-link" href="./search.php?search=<?=$_GET['search'];?>&page=1" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
         <!-- Back -->
           <li class="page-item">
-            <a class="page-link" href="./search.py?search=<?=$_GET['search'];?>&page=<?= $_GET['page']-1; ?>">
+            <a class="page-link" href="./search.php?search=<?=$_GET['search'];?>&page=<?= $_GET['page']-1; ?>">
               <span aria-hidden="true">&lsaquo;</span>
             </a>
           </li>
@@ -262,7 +267,7 @@
           <?php else: ?>
             <li class="page-item">
           <?php endif; ?>
-            <a class="page-link" href="./search.py?search=<?=$_GET['search'];?>&page=<?= $a; ?>"><?= $a; ?></a></li>
+            <a class="page-link" href="./search.php?search=<?=$_GET['search'];?>&page=<?= $a; ?>"><?= $a; ?></a></li>
         <?php endif; ?>
       <?php endfor; ?>
       <?php if (isset($_GET['page']) && $_GET['page'] != $laman): ?>
@@ -270,12 +275,12 @@
         <?php if ($_GET['page'] < $laman ): ?>
           <!-- next -->
           <li class="page-item">
-            <a class="page-link" href="./search.py?search=<?=$_GET['search'];?>&page=<?= $_GET['page']+1;?>">
+            <a class="page-link" href="./search.php?search=<?=$_GET['search'];?>&page=<?= $_GET['page']+1;?>">
               <span aria-hidden="true">&rsaquo;</span>
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="./search.py?search=<?=$_GET['search'];?>&page=<?= $laman ?>" aria-label="Previous">
+            <a class="page-link" href="./search.php?search=<?=$_GET['search'];?>&page=<?= $laman ?>" aria-label="Previous">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>

@@ -26,7 +26,7 @@
         echo "
     			<script>
     				alert('Kode Captha Salah');
-    				document.location.href='home';
+    				document.location.href='login';
     			</script>
     		";
         exit;
