@@ -61,13 +61,13 @@
          </a>
          <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav ml-auto">
-             <li class="nav-item home mx-4 nav-active bg-red-light">
-               <a class="nav-link clr-white beranda d-D" href="#">Beranda</a>
-               <a class="nav-link clr-white beranda d-T" href="#" data-toggle="collapse" data-target="#navbarNav">Beranda</a>
-               <a class="nav-link clr-white beranda d-M" href="#" data-toggle="collapse" data-target="#navbarNav">Beranda</a>
+             <li class="nav-item mx-4 nav-active bg-red-light">
+               <a class="nav-link clr-white beranda d-D" href="#" style="color: white !important;">Beranda</a>
+               <a class="nav-link clr-white beranda d-T" href="#" style="color: white !important;" data-toggle="collapse" data-target="#navbarNav">Beranda</a>
+               <a class="nav-link clr-white beranda d-M" href="#" style="color: white !important;" data-toggle="collapse" data-target="#navbarNav">Beranda</a>
              </li>
              <li class="nav-item mx-4">
-               <a class="nav-link home-2 clr-white D-Ba d-D" href="#">Buku Antikorupsi</a>
+               <a class="nav-link clr-white D-Ba d-D" href="#">Buku Antikorupsi</a>
                <a class="nav-link clr-white D-Ba d-T" href="#" data-toggle="collapse" data-target="#navbarNav">Buku Antikorupsi</a>
                <a class="nav-link clr-white D-Ba d-M" href="#" data-toggle="collapse" data-target="#navbarNav">Buku Antikorupsi</a>
              </li>
@@ -97,11 +97,6 @@
              </li>
              <li class="nav-item mx-4">
                <a class="nav-link clr-white" href="kontak">Kontak</a>
-             </li>
-             <li class="nav-item mx-4">
-               <a class="nav-link clr-white" href="#search">
-                 <i class="fas fa-search"></i>
-               </a>
              </li>
            </ul>
          </div>
@@ -1242,6 +1237,5 @@
      <script type="text/javascript" src="js/search.js"></script>
      <script type="text/javascript" src="js/global.js"></script>
      <script type="text/javascript" src="js/navbar.js"></script>
-     <script type="text/javascript" src="js/index.js"></script>
    </body>
  </html>
